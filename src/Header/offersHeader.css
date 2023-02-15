@@ -70,7 +70,7 @@
     transition: transform 0.2s;
     width: 25px;
     position: absolute;
-    top: 15px;
+    top: 11px;
     left: 11px;
     border-radius: 50%;
 }
@@ -101,7 +101,7 @@
     rotate: 180deg;
     width: 25px;
     position: absolute;
-    top: 15px;
+    top: 11px;
     right: 11px;
     border-radius: 50%;
     transition: transform 0.2s;

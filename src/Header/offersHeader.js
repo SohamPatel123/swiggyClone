@@ -1,5 +1,5 @@
 import styles from "./offersHeader.css";
-import rightArrowSrc from "../../images/rightArrowNav.png";
+// import rightArrowSrc from "../../images/rightArrowNav.png";
 
 export class offersHeader {
 
@@ -25,10 +25,10 @@ export class offersHeader {
                 </div>
             </div>
             <button class = "${styles.rightArrowKey}" id="rightScroll">
-                <img class = "${styles.rightArrowKeyImage}" src = "${rightArrowSrc}" alt="rightScroll" id="rightScrollImage"/>
+                <img class = "${styles.rightArrowKeyImage}" src = "https://img.icons8.com/ios-filled/2x/long-arrow-right.png" alt="rightScroll" id="rightScrollImage"/>
             </button>
             <button class = "${styles.leftArrowKey}" id="leftScroll">
-                <img class = "${styles.leftArrowKeyImage}" src = "${rightArrowSrc}" id="leftScrollImage" alt="leftScroll"/>
+                <img class = "${styles.leftArrowKeyImage}" src = "https://img.icons8.com/ios-filled/2x/long-arrow-right.png" id="leftScrollImage" alt="leftScroll"/>
             </button>
             </div>
         `;
