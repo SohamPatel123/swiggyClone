@@ -1,0 +1,10 @@
+html, body {
+    height: 300vh;
+    margin: 0px;
+}
+
+*{
+    font-size: 16px;
+    font-weight:300px;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+}
