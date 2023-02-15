@@ -1,5 +1,5 @@
 import styles from "./mainHeader.css";
-import {globalOptionsLogo} from "../../images/imagesFolder.js";
+import {globalOptionsLogo, locationDropDown} from "../../images/imagesFolder.js";
 
 
 export class mainHeader {
@@ -12,6 +12,16 @@ export class mainHeader {
         let globalOptionsTemplate = ``;
 
         for (const [key, value] of Object.entries(globalOptionsLogo)) {
+            
+            if(key=="Offers")
+            globalOptionsTemplate += `
+            <div class = "${styles.globalOption}">
+                <span>${value}</span>
+                <span>${key}</span> 
+                <span class="${styles.newTag}">NEW</span>
+            </div>
+            `;
+            else
             globalOptionsTemplate += `
             <div class = "${styles.globalOption}">
                 <span>${value}</span>
@@ -27,8 +37,11 @@ export class mainHeader {
                     ${args.logoSvg}
                 </a>
                 <div class = "${styles.userLocation}">
-                    <span class=${styles.preciseLocation}> Sector 42</span>
-                    <span value="${args.location}" class="${styles.locationValue}">Gurugram, Haryana 122002, India</span>
+                    <span class=${styles.preciseLocation} id = "preciseLocation">Sector 42</span>
+                    <span class=${styles.locationValue} id = "locationValue">Gurugram, Haryana 122002, India</span>
+                    <span class="${styles.locationDropDown}">
+                    ${locationDropDown}
+                    </span>
                 </div>
             </div>
             <div class = "${styles.globalOptionsMenu}">
@@ -36,6 +49,19 @@ export class mainHeader {
             </div>
         </div>
         `;
+
+
+        let changeLocationValue = () => {
+            let newArea = prompt("enter your exact area where you reside");
+            let newAddress = prompt("enter your city and state name");
+            newArea = newArea.length ? newArea: 'sector 42';
+            newAddress = newAddress.length ? newAddress: 'Gurugram, Haryana 122002, India';
+
+            this.mainHeaderTemplate.querySelector('#preciseLocation').innerHTML = newArea;
+            this.mainHeaderTemplate.querySelector('#locationValue').innerHTML = newAddress;
+        }
+
+        this.mainHeaderTemplate.querySelector(`.${styles.userLocation}`).addEventListener('click', changeLocationValue, false);
     }
 
     get () {
