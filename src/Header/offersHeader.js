@@ -1,5 +1,5 @@
 import styles from "./offersHeader.css";
-import rightArrowSrc from "/images/rightArrowNav.png";
+import rightArrowSrc from "../../images/rightArrowNav.png";
 
 export class offersHeader {
 
