@@ -17,25 +17,25 @@
     position:relative;
     margin: auto;
     width: 1200px;
-    height: 260px;
+    height: 300px;
     overflow: visible;
     
 }
 
 .offerWrapper {
-    /* height: 260px; */
     overflow:hidden;
     white-space: nowrap;
     transition: all 0.5s ease; 
     transform: translateX(0%);
+    height: 100%;
 }
 
 
 .cards {
     display:inline-block;
+    padding:20px 0px;
     height:260px;
     width:260px;
-    background: #bfbaba;
     margin-right: 50px;
     transition: transform 0.3s;
     overflow: hidden;
