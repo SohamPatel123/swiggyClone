@@ -1,5 +1,5 @@
 import styles from "./allRestaurantsContainer.css";
-import { RestaurantDetails, starImageSVG, discountImageSVG } from "./RestaurantsDetails.js";
+import { RestaurantDetails, starImageSVG, discountImageSVG, defaultImage } from "./RestaurantsDetails.js";
 
 export class allRestaurantsContainer {
     constructor(args) {
@@ -32,7 +32,7 @@ export class allRestaurantsContainer {
             while(cardIndex < 4)
             {
                 innerString += `<div class="${styles.Card}">
-                    <img class= ${styles.RestaurantCardImage} src="${RestaurantDetails[i+cardIndex].RestaurantImageSrc}" alt="hi" />
+                    <img class= ${styles.RestaurantCardImage} src="${validate(RestaurantDetails[i+cardIndex].RestaurantImageSrc, defaultImage)}" alt="hi" />
                     <div class="${styles.RestaurantName}">${validate(RestaurantDetails[i+cardIndex].RestaurantName,'Restaurant Name')}</div>
                     <div class="${styles.RestaurantDishes}">${validate(RestaurantDetails[i+cardIndex].RestaurantDishes,'No dishes')}</div>
                     <div class="${styles.InnerWrapper}">

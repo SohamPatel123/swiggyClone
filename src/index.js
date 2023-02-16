@@ -2,18 +2,28 @@ import {mainHeader} from "./Header/mainHeader.js";
 import {offersHeader} from "./Header/offersHeader.js";
 import styles from "./styles/main.css";
 import {offerImages, logoSvg} from "../images/imagesFolder.js"
-import { allRestaurantsContainer } from "./AllRestaurants/allRestaurantsContainer.js";
+import {allRestaurantsContainer} from "./AllRestaurants/allRestaurantsContainer.js";
+import {restaurantNavigation} from "./AllRestaurants/restaurantNavigation.js";
 
 const body = document.getElementById('body');
 
-let header = new mainHeader({logoURL:'https://www.swiggy.com/', location:"ahmedabad",logoSvg:logoSvg});
+// favicon for Swiggy Clone
+const head = document.getElementById('head');
+head.innerHTML +=`<link rel="icon" type="image/x-icon" href="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg">`;
+
+let header = new mainHeader({logoURL:'https://www.swiggy.com/',logoSvg:logoSvg});
 let offersSpace = new offersHeader(...offerImages);
-
-let allRestaurants = new allRestaurantsContainer();
-
 let combinedHeader = document.createElement('div');
 combinedHeader.className = styles.header;
 combinedHeader.append(header.get());
 combinedHeader.append(offersSpace.get());
 body.append(combinedHeader);
-body.append(allRestaurants.get());
+
+
+
+let RestaurantHeader = new restaurantNavigation();
+let allRestaurants = new allRestaurantsContainer();
+let combinedBody = document.createElement('div');
+combinedBody.append(RestaurantHeader.get());
+combinedBody.append(allRestaurants.get());
+body.append(combinedBody);

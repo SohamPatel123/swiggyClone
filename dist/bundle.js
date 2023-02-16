@@ -879,7 +879,7 @@ class allRestaurantsContainer {
             while(cardIndex < 4)
             {
                 innerString += `<div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].Card}">
-                    <img class= ${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantCardImage} src="${_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantImageSrc}" alt="hi" />
+                    <img class= ${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantCardImage} src="${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantImageSrc, _RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.defaultImage)}" alt="hi" />
                     <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantName}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantName,'Restaurant Name')}</div>
                     <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantDishes}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantDishes,'No dishes')}</div>
                     <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].InnerWrapper}">
@@ -988,7 +988,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".kWBHP9MZ78_ezbnYJ0Vg {\n    width: 100%;\n    min-height: calc(100vh - 340px);\n}\n\n.YEbNcwe1tudV2EpFBaJs {\n    margin: auto;\n    width: 1300px;\n    padding: 20px 30px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n}\n\n.UKHI0wtVPS7xr3yhs9Ec {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 40px;\n    height: 380px;\n}\n\n.sm7DtUECQWzgWrEqa4o6 {\n    height: fit-content;\n    width: 254px;\n    padding: 20px;\n    padding-bottom: 10px;\n    background: white;\n    position: relative;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n.sm7DtUECQWzgWrEqa4o6:hover {\n    border: 1px solid #d9d9db;\n}\n\n\n.sm7DtUECQWzgWrEqa4o6:hover .gYjGuymoYMX_x5lvf1Uf {\n    display: block;\n}\n\n.K72XqITQLX3RIV8vrMZE {\n    width: 254px;\n    display: block;\n}\n\n.yluMPY43JvSc8HltqFzh{\n    margin-top: 14px;\n    font-size: 17px;\n    font-weight: 500;\n}\n\n.aPNnH6KhG3_8jowCB9O6{\n    font-size: 13px;\n    margin-top:4px;\n    color: #686b78;\n}\n\n.xbmQXGWgDhQJFZMy1LeJ {\n    display: flex;\n    margin: 18px 0px;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 12px;\n}\n\n.If9o2e6miSc2U7oA11HU, ._rhIzJtPq7TGWpHXChkc, .xbmQXGWgDhQJFZMy1LeJ>span {\n    color: #535665;\n    font-size: 12px;\n    font-weight: 300;\n}\n\n.W86jA4k043i9HtBUaDA7 {\n    background-color: #48c479;\n    height: 20px;\n    width: 42px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.uqXv8W_DxSPw7Wao9ncS{\n    font-size: 12px;\n    text-align: center;\n    color: white;\n}\n\n.FrKvjtiRVjI8rDfC1DCj {\n    color: white;\n    position: absolute;\n    font-weight: 300;\n    font-size: 12px;\n    top: 20px;\n    left: 12px;\n    background: rgb(58, 60, 65);\n    padding: 6px 10px;\n}\n\n.KewhAyt79SaZbPlNbOFH {    \n    position: absolute;\n    top: 46px;\n    left:12px;\n    border-left: 8px solid transparent;\n    border-top: 8px solid rgb(58, 60, 65);;\n}\n\n.mkRuzEA_IFjVddabVK2D {\n    display: flex;\n    gap: 4px;\n    height: 20px;\n    align-items: flex-start;\n    color: #926459;\n    margin: 14px 0px 10px;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.mPtOyYJG1WiHJkKnbzfb {\n    text-overflow: ellipsis;\n    font-size: 14px;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.gYjGuymoYMX_x5lvf1Uf {\n    display: none;\n    text-align: center;\n    color: #5d8ed5;\n    font-size: 12px;\n    font-weight: bold;\n    height: 20px;\n    text-transform: uppercase;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.gYjGuymoYMX_x5lvf1Uf:hover {\n    color:#5f616d;\n}\n\n.HzilLAaKMdI6xKeViLAz {\n    display: none;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".kWBHP9MZ78_ezbnYJ0Vg {\n    width: 100%;\n    min-height: calc(100vh - 340px);\n}\n\n.YEbNcwe1tudV2EpFBaJs {\n    margin: auto;\n    width: 1300px;\n    padding: 12px 30px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n}\n\n.UKHI0wtVPS7xr3yhs9Ec {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 40px;\n    height: 380px;\n}\n\n.sm7DtUECQWzgWrEqa4o6 {\n    height: fit-content;\n    width: 254px;\n    padding: 20px;\n    padding-bottom: 10px;\n    background: white;\n    position: relative;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n.sm7DtUECQWzgWrEqa4o6:hover {\n    border: 1px solid #d9d9db;\n}\n\n\n.sm7DtUECQWzgWrEqa4o6:hover .gYjGuymoYMX_x5lvf1Uf {\n    display: block;\n}\n\n.K72XqITQLX3RIV8vrMZE {\n    width: 254px;\n    display: block;\n}\n\n.yluMPY43JvSc8HltqFzh{\n    margin-top: 14px;\n    font-size: 17px;\n    font-weight: 500;\n}\n\n.aPNnH6KhG3_8jowCB9O6{\n    font-size: 13px;\n    margin-top:4px;\n    color: #686b78;\n}\n\n.xbmQXGWgDhQJFZMy1LeJ {\n    display: flex;\n    margin: 18px 0px;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 12px;\n}\n\n.If9o2e6miSc2U7oA11HU, ._rhIzJtPq7TGWpHXChkc, .xbmQXGWgDhQJFZMy1LeJ>span {\n    text-transform: uppercase;\n    color: #535665;\n    font-size: 12px;\n    font-weight: 300;\n}\n\n.W86jA4k043i9HtBUaDA7 {\n    background-color: #48c479;\n    height: 20px;\n    width: 42px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.uqXv8W_DxSPw7Wao9ncS{\n    font-size: 12px;\n    text-align: center;\n    color: white;\n}\n\n.FrKvjtiRVjI8rDfC1DCj {\n    color: white;\n    position: absolute;\n    font-weight: 300;\n    font-size: 12px;\n    top: 20px;\n    left: 12px;\n    background: rgb(58, 60, 65);\n    padding: 6px 10px;\n}\n\n.KewhAyt79SaZbPlNbOFH {    \n    position: absolute;\n    top: 46px;\n    left:12px;\n    border-left: 8px solid transparent;\n    border-top: 8px solid rgb(58, 60, 65);;\n}\n\n.mkRuzEA_IFjVddabVK2D {\n    display: flex;\n    gap: 4px;\n    height: 20px;\n    align-items: flex-start;\n    color: #926459;\n    margin: 14px 0px 10px;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.mPtOyYJG1WiHJkKnbzfb {\n    text-overflow: ellipsis;\n    font-size: 14px;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.gYjGuymoYMX_x5lvf1Uf {\n    display: none;\n    text-align: center;\n    color: #5d8ed5;\n    font-size: 12px;\n    font-weight: bold;\n    height: 20px;\n    text-transform: uppercase;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.gYjGuymoYMX_x5lvf1Uf:hover {\n    color:#5f616d;\n}\n\n.HzilLAaKMdI6xKeViLAz {\n    display: none;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"allRestaurantsContainer": "kWBHP9MZ78_ezbnYJ0Vg",
@@ -1020,6 +1020,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "RestaurantDetails": () => (/* binding */ RestaurantDetails),
+/* harmony export */   "defaultImage": () => (/* binding */ defaultImage),
 /* harmony export */   "discountImageSVG": () => (/* binding */ discountImageSVG),
 /* harmony export */   "starImageSVG": () => (/* binding */ starImageSVG)
 /* harmony export */ });
@@ -1027,40 +1028,40 @@ const RestaurantDetails = [
     {
         RestaurantImageSrc : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wwnotez8tcfpq0lezgln",
         RestaurantName: "Tamil Nadu Dosa Corner",
-        RestaurantDishes: "",
+        RestaurantDishes: "Dosa, Idli, South-Indian, Medu-vada",
         RestaurantRating: "4.0",
-        RestaurantTime: "",
-        RestaurantServingSize: "",
+        RestaurantTime: "20 MINS",
+        RestaurantServingSize: "₹200 for one",
         RestaurantPromotionTag: "PROMOTED",
         RestaurantOffers: "",
     },
     {
         RestaurantImageSrc : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/moas53o6l9xnic3cuvzd",
-        RestaurantName: "Om Sweet and Counter",
-        RestaurantDishes: "",
+        RestaurantName: "Om Sweet and Snacks",
+        RestaurantDishes: "Sweets, NorthIndian, FastFoods, South Indian, Chinese, Snacks",
         RestaurantRating: "3.7",
-        RestaurantTime: "",
-        RestaurantServingSize: "",
+        RestaurantTime: "25 mins",
+        RestaurantServingSize: "₹500 for two",
         RestaurantPromotionTag: "PROMOTED",
         RestaurantOffers: "",
     },
     {
         RestaurantImageSrc : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cacobvnojvnoi7jlvmee",
         RestaurantName: "Call Chotu - Your Everyday Food Genie",
-        RestaurantDishes: "",
+        RestaurantDishes: "Gujarati, Rajasthani, Non-veg dishes, Sweets",
         RestaurantRating: "4.1",
-        RestaurantTime: "",
-        RestaurantServingSize: "",
+        RestaurantTime: "5 mins",
+        RestaurantServingSize: "₹50 for one",
         RestaurantPromotionTag: "",
         RestaurantOffers: "",
     },
     {
         RestaurantImageSrc : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/1293a58ab5610f4c730c3d8cb6ac1b65",
         RestaurantName: "Chef Mantra",
-        RestaurantDishes: "",
+        RestaurantDishes: "Chinese, Mexican, Continental dishes",
         RestaurantRating: "5.0",
-        RestaurantTime: "",
-        RestaurantServingSize: "",
+        RestaurantTime: "12 mins",
+        RestaurantServingSize: "₹450 for one",
         RestaurantPromotionTag: "PROMOTED",
         RestaurantOffers: "",
     },
@@ -1069,36 +1070,76 @@ const RestaurantDetails = [
         RestaurantName: "Dilli Tiffin",
         RestaurantDishes: "",
         RestaurantRating: "2.0",
-        RestaurantTime: "",
-        RestaurantServingSize: "",
+        RestaurantTime: "30 mins",
+        RestaurantServingSize: "₹60 for two",
         RestaurantPromotionTag: "PROMOTED",
         RestaurantOffers: "",
     },
     {
         RestaurantImageSrc : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/h7wbfbhtwsagfa4ecklk",
         RestaurantName: "Domino's",
-        RestaurantDishes: "",
+        RestaurantDishes: "Pizza, Cold-drinks, Cookies",
         RestaurantRating: "3.9",
         RestaurantTime: "",
-        RestaurantServingSize: "",
+        RestaurantServingSize: "₹225 for one",
         RestaurantPromotionTag: "",
         RestaurantOffers: "",
     },
     {
         RestaurantImageSrc : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/traf3mulmi6o9gnjgm6y",
         RestaurantName: "StarBucks",
-        RestaurantDishes: "",
+        RestaurantDishes: "Coffee, Snacks, Cake, Sandwich",
         RestaurantRating: "4.7",
-        RestaurantTime: "",
-        RestaurantServingSize: "",
+        RestaurantTime: "15 mins",
+        RestaurantServingSize: "₹400 for one",
         RestaurantPromotionTag: "PROMOTED",
         RestaurantOffers: "",
     },
     {
         RestaurantImageSrc : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f1e0621ea2395caeaa0a2d80f0274a2b",
         RestaurantName: "Burger King",
-        RestaurantDishes: "",
+        RestaurantDishes: "Burger, Soft-drinks, French-fries",
         RestaurantRating: "4.8",
+        RestaurantTime: "12 mins",
+        RestaurantServingSize: "₹200 for one",
+        RestaurantPromotionTag: "",
+        RestaurantOffers: "Buy 2 get 1 free",
+    },
+    {
+        RestaurantImageSrc : "",
+        RestaurantName: "",
+        RestaurantDishes: "",
+        RestaurantRating: "",
+        RestaurantTime: "",
+        RestaurantServingSize: "",
+        RestaurantPromotionTag: "PROMOTED",
+        RestaurantOffers: "",
+    },
+    {
+        RestaurantImageSrc : "",
+        RestaurantName: "",
+        RestaurantDishes: "",
+        RestaurantRating: "",
+        RestaurantTime: "",
+        RestaurantServingSize: "",
+        RestaurantPromotionTag: "",
+        RestaurantOffers: "",
+    },
+    {
+        RestaurantImageSrc : "",
+        RestaurantName: "",
+        RestaurantDishes: "",
+        RestaurantRating: "",
+        RestaurantTime: "",
+        RestaurantServingSize: "",
+        RestaurantPromotionTag: "PROMOTED",
+        RestaurantOffers: "",
+    },
+    {
+        RestaurantImageSrc : "",
+        RestaurantName: "",
+        RestaurantDishes: "",
+        RestaurantRating: "",
         RestaurantTime: "",
         RestaurantServingSize: "",
         RestaurantPromotionTag: "",
@@ -1123,7 +1164,131 @@ const starImageSVG = `<svg height="10px" width="10px" version="1.1"  xmlns="http
 
 const discountImageSVG = `<svg width="16px" height="16px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" id="discount" class="icon glyph" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"><path d="M21.59,9.83A4.21,4.21,0,0,1,21.17,9,4.73,4.73,0,0,1,21,8.07a4.19,4.19,0,0,0-.64-2.16,4.15,4.15,0,0,0-1.87-1.28,4.36,4.36,0,0,1-.84-.43A4.55,4.55,0,0,1,17,3.54a4.29,4.29,0,0,0-1.81-1.4A4.19,4.19,0,0,0,13,2.21a4.24,4.24,0,0,1-1.94,0A4.19,4.19,0,0,0,8.8,2.14,4.29,4.29,0,0,0,7,3.54a4.55,4.55,0,0,1-.66.66,4.36,4.36,0,0,1-.84.43A4.15,4.15,0,0,0,3.62,5.91,4.19,4.19,0,0,0,3,8.07,4.73,4.73,0,0,1,2.83,9a4.21,4.21,0,0,1-.42.81A4.3,4.3,0,0,0,1.64,12a4.3,4.3,0,0,0,.77,2.17,4.21,4.21,0,0,1,.42.81,4.73,4.73,0,0,1,.15.95,4.19,4.19,0,0,0,.64,2.16,4.15,4.15,0,0,0,1.87,1.28,4.36,4.36,0,0,1,.84.43,4.55,4.55,0,0,1,.66.66,4.29,4.29,0,0,0,1.81,1.4,2.91,2.91,0,0,0,.87.13,6,6,0,0,0,1.36-.2,4.24,4.24,0,0,1,1.94,0,4.19,4.19,0,0,0,2.23.07A4.29,4.29,0,0,0,17,20.46a4.55,4.55,0,0,1,.66-.66,4.36,4.36,0,0,1,.84-.43,4.15,4.15,0,0,0,1.87-1.28A4.19,4.19,0,0,0,21,15.93a4.73,4.73,0,0,1,.15-.95,4.21,4.21,0,0,1,.42-.81A4.3,4.3,0,0,0,22.36,12,4.3,4.3,0,0,0,21.59,9.83ZM9.5,8A1.5,1.5,0,1,1,8,9.5,1.5,1.5,0,0,1,9.5,8Zm5,8A1.5,1.5,0,1,1,16,14.5,1.5,1.5,0,0,1,14.5,16Zm1.21-6.29-6,6a1,1,0,0,1-1.42,0,1,1,0,0,1,0-1.42l6-6a1,1,0,0,1,1.42,1.42Z" style="fill:#8b584b"></path></g></svg>`;
 
+const defaultImage = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAADNCAMAAAC8cX2UAAAAA1BMVEWorLJXzBBHAAAASElEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuA8XLAAFcyH30AAAAAElFTkSuQmCC`;
 
+
+
+/***/ }),
+/* 22 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "restaurantNavigation": () => (/* binding */ restaurantNavigation)
+/* harmony export */ });
+/* harmony import */ var _restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
+
+
+class restaurantNavigation {
+    constructor (args) {
+        this.NavigationTemplate = document.createElement('div');
+        this.NavigationTemplate.className = _restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].restaurantNavigation;
+
+        this.NavigationTemplate.innerHTML  = `
+        <div class=${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].navigationWrapper}>
+            <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].restaurantCount}">100 restaurants</div>
+            <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filtersWrapper}">
+                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Relevance</div>
+                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Delivery Time</div>
+                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Rating</div>
+                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Cost: Low to High</div>
+                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Cost: Low to High</div>
+                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">
+                    <span>Filters</span>
+                    <span class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterImageWrapper}">
+                        <img src="https://as1.ftcdn.net/v2/jpg/04/02/77/08/1000_F_402770898_3yxaOfo0e8sTJ6mgebY1KaOPcwgWKSHE.jpg" alt="hi" class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterImage}"/>
+                    </span>
+                </div>
+            </div>
+        </div>
+        `;
+    }
+    get() {
+        return this.NavigationTemplate;
+    }
+}
+
+
+
+/***/ }),
+/* 23 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(24);
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+/* 24 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".c5T6CwoXDDz_buuHxNn2 {\n    box-sizing: border-box;\n    background: white;\n    position: sticky;\n    height: 72px;\n    top: 0px;\n    margin:10px 0px;\n    z-index:1;\n    left: 0;\n}\n\n.ooAbLE2XPxiAI2CZxxcB{\n    box-sizing: border-box;\n    height: 100%;\n    display: flex;\n    align-items: end;\n    justify-content: space-between;\n    width: 1200px;\n    border-bottom: 1px solid #e9e9eb;\n    margin:auto;\n}\n\n.ERqgMbaWsV49NC4dEFbi {\n    box-sizing: border-box;\n    color:black;\n    font-size: 28px;\n    font-weight: 600;\n    padding-bottom: 10px;\n    text-align: end;\n}\n\n.a6wU4xsg02ZmyFfGUQdw {\n    box-sizing: border-box;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: flex-end;\n    margin-top: 8px;\n}\n\n.AQuauSZy1TCnBf5oqOan {\n    box-sizing: border-box;\n    margin-left:36px;\n    padding-bottom: 12px;\n    color: grey;\n    font-size: 16px;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan:hover {\n    cursor: pointer;\n    border-bottom: 1px solid grey;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child {\n    font-weight: bold;\n    color:black;\n}\n\n.vB99kcGo5EIjT5mqqCrt {\n    height: 20px;\n    width: 20px;\n    rotate: 90deg;\n    border-radius: 50%;\n    color: orange;\n    padding: 2px;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child:hover {\n    color: orange;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan > span:first-of-type {\n    padding-right: 8px;\n}\n\n.KBGhNOoS_ibGecf8x2hS {\n    position: relative;\n    top: 4px;\n    display: inline-block;\n    height: 25px;\n    width: 25px;\n    border: 2px solid orange;\n    border-radius: 50%;\n}\n", ""]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"restaurantNavigation": "c5T6CwoXDDz_buuHxNn2",
+	"navigationWrapper": "ooAbLE2XPxiAI2CZxxcB",
+	"restaurantCount": "ERqgMbaWsV49NC4dEFbi",
+	"filtersWrapper": "a6wU4xsg02ZmyFfGUQdw",
+	"filterOptions": "AQuauSZy1TCnBf5oqOan",
+	"filterImage": "vB99kcGo5EIjT5mqqCrt",
+	"filterImageWrapper": "KBGhNOoS_ibGecf8x2hS"
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ })
@@ -1209,6 +1374,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(16);
 /* harmony import */ var _images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
 /* harmony import */ var _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(18);
+/* harmony import */ var _AllRestaurants_restaurantNavigation_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(22);
+
 
 
 
@@ -1217,17 +1384,26 @@ __webpack_require__.r(__webpack_exports__);
 
 const body = document.getElementById('body');
 
-let header = new _Header_mainHeader_js__WEBPACK_IMPORTED_MODULE_0__.mainHeader({logoURL:'https://www.swiggy.com/', location:"ahmedabad",logoSvg:_images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__.logoSvg});
+// favicon for Swiggy Clone
+const head = document.getElementById('head');
+head.innerHTML +=`<link rel="icon" type="image/x-icon" href="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg">`;
+
+let header = new _Header_mainHeader_js__WEBPACK_IMPORTED_MODULE_0__.mainHeader({logoURL:'https://www.swiggy.com/',logoSvg:_images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__.logoSvg});
 let offersSpace = new _Header_offersHeader_js__WEBPACK_IMPORTED_MODULE_1__.offersHeader(..._images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__.offerImages);
-
-let allRestaurants = new _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__.allRestaurantsContainer();
-
 let combinedHeader = document.createElement('div');
 combinedHeader.className = _styles_main_css__WEBPACK_IMPORTED_MODULE_2__["default"].header;
 combinedHeader.append(header.get());
 combinedHeader.append(offersSpace.get());
 body.append(combinedHeader);
-body.append(allRestaurants.get());
+
+
+
+let RestaurantHeader = new _AllRestaurants_restaurantNavigation_js__WEBPACK_IMPORTED_MODULE_5__.restaurantNavigation();
+let allRestaurants = new _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__.allRestaurantsContainer();
+let combinedBody = document.createElement('div');
+combinedBody.append(RestaurantHeader.get());
+combinedBody.append(allRestaurants.get());
+body.append(combinedBody);
 
 })();
 
