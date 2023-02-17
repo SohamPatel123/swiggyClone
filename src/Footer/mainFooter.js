@@ -1,4 +1,5 @@
 import styles from "./mainFooter.css";
+import {locations} from "./deliveryLocationsArray.js";
 
 class mainFooter {
 
@@ -6,41 +7,47 @@ class mainFooter {
         this.mainFooterTemplate = document.createElement('div');
         this.mainFooterTemplate.className = styles.mainFooterTemplate;
 
+        let locationsTemplate = () => {
+            let locationStr = ``;
+            for(let index = 0; index < locations.length; index++)
+                locationStr += `<li>${locations[index]}</li>`;
+            return locationStr;
+        }
+
         this.mainFooterTemplate.innerHTML = `
         <div class=${styles.footerWrapper}>
             <div class=${styles.companySupports}>
-                <div>
-                    <div>Company</div>
-                    <div>About us</div>
-                    <div>Team</div>
-                    <div>Careers</div>
-                    <div>Swiggy Blog</div>
-                    <div>Bug Bounty</div>
-                    <div>Swiggy One</div>
-                    <div>Swiggy Corporate</div>
-                    <div>Swiggy Instamart</div>
-                    <div>Swiggy Genie</div>
-                </div>
-                <div>
-                    <div>Contact</div>
-                    <div>Email: swiggyclonesupport@swiggy.com</div>
-                    <div>Instagram: _swiggy_clone_</div>
-                    <div>Helpline no: (+91)9876543210</div>
-                </div>
-                <div>
-                    <div>Legal</div>
-                    <div>No nothing is legal here</div>
-                    <div>Cloned from www.swiggy.com</div>
-                </div>
-                <div>
-                    <div>Social media handles</div>
+                <ul>
+                    <li>Company</li>
+                    <li>About us</li>
+                    <li>Team</li>
+                    <li>Careers</li>
+                    <li>Swiggy Blog</li>
+                    <li>Bug Bounty</li>
+                    <li>Swiggy One</li>
+                    <li>Swiggy Corporate</li>
+                    <li>Swiggy Instamart</li>
+                    <li>Swiggy Genie</li>
+                </ul>
+                <ul>
+                    <li>Contact</li>
+                    <li>Email: swiggyclonesupport@swiggy.com</li>
+                    <li>Instagram: _swiggy_clone_</li>
+                    <li>Helpline no: (+91)9876543210</li>
+                </ul>
+                <ul>
+                    <li>Legal</li>
+                    <li>No nothing is legal here</li>
+                    <li>Cloned from www.swiggy.com</li>
+                </ul>
+                <ul>
+                    <li>Social media handles</li>
                     <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2880px-Google_Play_Store_badge_EN.svg.png?20220907104002" alt="download options image" class= ${styles.downloadOptions}>
                     <img src = "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="image for app store" class="${styles.downloadOptions}" />
-                </div>
+                </ul>
             </div>
-
-            <div class=${styles.availableLocations}>
-            HIII
+            <ul class=${styles.availableLocations}>
+                ${locationsTemplate()}
             </div>
         </div>
         `;

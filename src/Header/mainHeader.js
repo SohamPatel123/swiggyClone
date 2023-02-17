@@ -8,9 +8,7 @@ export class mainHeader {
     {
         this.mainHeaderTemplate= document.createElement('div');
         this.mainHeaderTemplate.className = `${styles.headerWrapper}`;
-
         let globalOptionsTemplate = ``;
-
         for (const [key, value] of Object.entries(globalOptionsLogo)) {
             
             if(key=="Offers")
@@ -40,7 +38,7 @@ export class mainHeader {
                     <span class=${styles.preciseLocation} id = "preciseLocation">Sector 42</span>
                     <span class=${styles.locationValue} id = "locationValue">Gurugram, Haryana 122002, India</span>
                     <span class="${styles.locationDropDown}">
-                    ${locationDropDown}
+                        ${locationDropDown}
                     </span>
                 </div>
             </div>
@@ -50,18 +48,16 @@ export class mainHeader {
         </div>
         `;
 
-
-        let changeLocationValue = () => {
+        let handleLocation = () => {
             let newArea = prompt("enter your exact area where you reside");
             let newAddress = prompt("enter your city and state name");
             newArea = newArea.length ? newArea: 'sector 42';
             newAddress = newAddress.length ? newAddress: 'Gurugram, Haryana 122002, India';
-
             this.mainHeaderTemplate.querySelector('#preciseLocation').innerHTML = newArea;
             this.mainHeaderTemplate.querySelector('#locationValue').innerHTML = newAddress;
         }
 
-        this.mainHeaderTemplate.querySelector(`.${styles.userLocation}`).addEventListener('click', changeLocationValue, false);
+        this.mainHeaderTemplate.querySelector(`.${styles.userLocation}`).addEventListener('click', handleLocation, false);
     }
 
     get () {

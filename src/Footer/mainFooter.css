@@ -2,6 +2,7 @@
     background-color: black;
     color: white;
     position: relative;
+    width: 100%;
     z-index:3;
     margin-top: 40px;
     padding: 80px 0px;
@@ -9,7 +10,6 @@
 
 .footerWrapper {
     margin: auto;
-    box-sizing: border-box;
     min-width : 1200px;
     max-width: 1200px;
     display: flex;
@@ -17,24 +17,34 @@
 }
 
 .companySupports {
+    min-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.companySupports > div {
+@media screen and (max-width: 1200px) {
+    .companySupports {
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: scroll;
+    }
+  }
+
+.companySupports > ul {
     display: flex;
     flex-direction: column;
     height: max-content;
+    list-style-type: none;
 }
 
-.companySupports > div > div {
+.companySupports > ul > div {
     color: white;
     font-size: 14px;
     padding-bottom: 12px;
 }
 
-.companySupports > div :first-child {
+.companySupports > ul :first-child {
     color: grey;
     font-size: 14px;
     font-weight: 700;
@@ -44,6 +54,18 @@
 
 .downloadOptions {
     height: 100px;
-    width: 300px;
+    width: 250px;
     margin-bottom: 16px;
+}
+
+.availableLocations {
+    list-style-type: none;
+    border-top: 1px solid white;
+    padding: 30px 0px;
+    height: 100px;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }

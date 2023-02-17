@@ -1,6 +1,5 @@
 .allRestaurantsContainer {
     width: 100%;
-    min-height: calc(100vh - 340px);
 }
 
 .RestaurantWrapper {
@@ -141,4 +140,8 @@
 
 .dontDisplay {
     display: none;
+}
+
+ul {
+    list-style-type: none;
 }

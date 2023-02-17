@@ -21,9 +21,7 @@ class mainHeader {
     {
         this.mainHeaderTemplate= document.createElement('div');
         this.mainHeaderTemplate.className = `${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].headerWrapper}`;
-
         let globalOptionsTemplate = ``;
-
         for (const [key, value] of Object.entries(_images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_1__.globalOptionsLogo)) {
             
             if(key=="Offers")
@@ -53,7 +51,7 @@ class mainHeader {
                     <span class=${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].preciseLocation} id = "preciseLocation">Sector 42</span>
                     <span class=${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].locationValue} id = "locationValue">Gurugram, Haryana 122002, India</span>
                     <span class="${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].locationDropDown}">
-                    ${_images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_1__.locationDropDown}
+                        ${_images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_1__.locationDropDown}
                     </span>
                 </div>
             </div>
@@ -63,18 +61,16 @@ class mainHeader {
         </div>
         `;
 
-
-        let changeLocationValue = () => {
+        let handleLocation = () => {
             let newArea = prompt("enter your exact area where you reside");
             let newAddress = prompt("enter your city and state name");
             newArea = newArea.length ? newArea: 'sector 42';
             newAddress = newAddress.length ? newAddress: 'Gurugram, Haryana 122002, India';
-
             this.mainHeaderTemplate.querySelector('#preciseLocation').innerHTML = newArea;
             this.mainHeaderTemplate.querySelector('#locationValue').innerHTML = newAddress;
         }
 
-        this.mainHeaderTemplate.querySelector(`.${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].userLocation}`).addEventListener('click', changeLocationValue, false);
+        this.mainHeaderTemplate.querySelector(`.${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].userLocation}`).addEventListener('click', handleLocation, false);
     }
 
     get () {
@@ -606,20 +602,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _offersHeader_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
-// import rightArrowSrc from "../../images/rightArrowNav.png";
 
 class offersHeader {
 
     constructor (...args)
     {
-        let val = [...args];
-        
-        let offersCards =``;
+        let val = [...args], offersCards =``;
         for(let index = 0; index != val.length ;index++)
         {
             offersCards += `<span class="${_offersHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].cards}">
-                <img src = "${val[index]}" alt="offer number ${index}" width="260px" height="260px"/>
-            </span>`;
+                                <img src = "${val[index]}" alt="offer number ${index}" width="260px" height="260px"/>
+                            </span>`;
         }
 
         this.offersHeaderTemplate = document.createElement('div');
@@ -628,7 +621,7 @@ class offersHeader {
             <div class="${_offersHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].buttonWrapper}">
             <div class = "${_offersHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].offerHeader}">
                 <div class="${_offersHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].offerWrapper}" id="offerWrapper">
-                        ${offersCards}
+                    ${offersCards}
                 </div>
             </div>
             <button class = "${_offersHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].rightArrowKey}" id="rightScroll">
@@ -641,34 +634,27 @@ class offersHeader {
         `;
 
         let scrollValue = 0, offset=310;
-        let leftScrollHandler = () => {
+        let handleCarouselScroll = (event) => {
             let offerWrapper = this.offersHeaderTemplate.querySelector('#offerWrapper');
-            console.log(offerWrapper.scrollLeft)
-            scrollValue += offset;
-            scrollValue = Math.min(scrollValue, 0)
-            offerWrapper.style.marginLeft = scrollValue +'px';
-            console.log("scroll value",scrollValue);
-            this.offersHeaderTemplate.querySelector("#leftScroll").style.display = scrollValue<0 ? 'block':'none';
-            this.offersHeaderTemplate.querySelector("#leftScrollImage").style.display = scrollValue<0 ? 'block':'none';
-            this.offersHeaderTemplate.querySelector("#rightScroll").style.display = scrollValue > (-offset * (val.length - 3)) ? 'block':'none';
-            this.offersHeaderTemplate.querySelector("#rightScrollImage").style.display = scrollValue > (-offset * (val.length - 3)) ? 'block':'none';
-        };
-
-        let rightScrollHandler = () => {
-            let offerWrapper = this.offersHeaderTemplate.querySelector('#offerWrapper');
-            console.log(offerWrapper.scrollLeft)
-            scrollValue -= offset;
-            scrollValue = Math.max(scrollValue,-offset * (val.length - 1));
+            if(event.target.id=="rightScroll")
+            {
+                scrollValue -= offset;
+                scrollValue = Math.max(scrollValue,-offset * (val.length - 1));
+            }
+            else 
+            {
+                scrollValue += offset;
+                scrollValue = Math.min(scrollValue, 0);
+            }
             offerWrapper.style.marginLeft = scrollValue +'px';
             this.offersHeaderTemplate.querySelector("#leftScroll").style.display = scrollValue<0 ? 'block':'none';
             this.offersHeaderTemplate.querySelector("#leftScrollImage").style.display = scrollValue<0 ? 'block':'none';
             this.offersHeaderTemplate.querySelector("#rightScroll").style.display = scrollValue > (-offset * (val.length - 3)) ? 'block':'none';
             this.offersHeaderTemplate.querySelector("#rightScrollImage").style.display = scrollValue > (-offset * (val.length - 3)) ? 'block':'none';
-            console.log(scrollValue);
-        };
+        }
 
-        this.offersHeaderTemplate.querySelector('#rightScroll').addEventListener('click', rightScrollHandler);
-        this.offersHeaderTemplate.querySelector('#leftScroll').addEventListener('click', leftScrollHandler);
+        this.offersHeaderTemplate.querySelector('#rightScroll').addEventListener('click', handleCarouselScroll);
+        this.offersHeaderTemplate.querySelector('#leftScroll').addEventListener('click', handleCarouselScroll);
         
     }
 
@@ -746,7 +732,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".HzaSNn5MaC55JdgvAhMk {\n    height:340px;\n    background: #181a29;\n    align-content: center;\n    display:flex;\n    align-items: center;\n    padding: 0 20px;\n    min-width: fit-content;\n}\n\n.oeeUHtBa_4Ugg3eJjQla {\n    position:relative;\n    width: 1200px;\n    overflow: hidden;\n}\n\n.Wj5OiDPHPjBl6AHWGCn_ {\n    position:relative;\n    margin: auto;\n    width: 1200px;\n    height: 300px;\n    overflow: visible;\n    \n}\n\n.W_Zq0tJcUww1PNjfSJYE {\n    overflow:hidden;\n    white-space: nowrap;\n    transition: all 0.5s ease; \n    transform: translateX(0%);\n    height: 100%;\n}\n\n\n.HXo_NN67UD_qopA6y0cx {\n    display:inline-block;\n    padding:20px 0px;\n    height:260px;\n    width:260px;\n    margin-right: 50px;\n    transition: transform 0.3s;\n    overflow: hidden;\n}\n\n.HXo_NN67UD_qopA6y0cx:hover {\n    cursor: pointer;\n    transform:scale(1.05);\n}\n\n.jhSJdCm6XC4Zf4sa9H0k {\n    background: white;\n    text-align: center;\n    justify-items: center;\n    position: absolute;\n    top:50%;\n    right:-23.5px;\n    margin-top: -23.5px;\n    height: 47px;\n    width: 47px;\n    border-radius: 50%;\n    border: 0;\n    padding-top: 4px;\n}\n\n.jhSJdCm6XC4Zf4sa9H0k:hover .VBnTTMQ6QZZgtkkX5mvn{\n    cursor: pointer;\n    transform: translateX(8px);\n}\n\n.VBnTTMQ6QZZgtkkX5mvn {\n    transition: transform 0.2s;\n    width: 25px;\n    position: absolute;\n    top: 11px;\n    left: 11px;\n    border-radius: 50%;\n}\n\n.BkyRS9nYujPqQfh5BGEp {\n    display: none;\n    background: white;\n    text-align: center;\n    justify-items: center;\n    position: absolute;\n    top:50%;\n    margin-top:-23.5px;\n    left:-23.5px;\n    height: 47px;\n    width: 47px;\n    border-radius: 50%;\n    border: 0;\n    padding-top: 4px;\n}\n\n.BkyRS9nYujPqQfh5BGEp:hover .DqkQVjNzVT0xKusbvXx_{\n    cursor: pointer;\n    transform: translateX(8px);\n}\n\n.DqkQVjNzVT0xKusbvXx_{\n    display: none;\n    rotate: 180deg;\n    width: 25px;\n    position: absolute;\n    top: 11px;\n    right: 11px;\n    border-radius: 50%;\n    transition: transform 0.2s;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".HzaSNn5MaC55JdgvAhMk {\n    height:340px;\n    background: #181a29;\n    align-content: center;\n    display:flex;\n    align-items: center;\n    padding: 0 20px;\n    min-width: fit-content;\n}\n\n.oeeUHtBa_4Ugg3eJjQla {\n    position:relative;\n    width: 1200px;\n    overflow: hidden;\n}\n\n.Wj5OiDPHPjBl6AHWGCn_ {\n    position:relative;\n    margin: auto;\n    width: 1200px;\n    height: 300px;\n    overflow: visible;\n    \n}\n\n.W_Zq0tJcUww1PNjfSJYE {\n    overflow:hidden;\n    white-space: nowrap;\n    transition: all 0.5s ease; \n    transform: translateX(0%);\n    height: 100%;\n}\n\n.HXo_NN67UD_qopA6y0cx {\n    display:inline-block;\n    padding:20px 0px;\n    height:260px;\n    width:260px;\n    margin-right: 50px;\n    transition: transform 0.3s;\n    overflow: hidden;\n}\n\n.HXo_NN67UD_qopA6y0cx:hover {\n    cursor: pointer;\n    transform:scale(1.05);\n}\n\n.jhSJdCm6XC4Zf4sa9H0k {\n    background: white;\n    text-align: center;\n    justify-items: center;\n    position: absolute;\n    display: block;\n    top:50%;\n    right:-23.5px;\n    margin-top: -23.5px;\n    height: 47px;\n    width: 47px;\n    border-radius: 50%;\n    border: 0;\n    padding-top: 4px;\n}\n\n.jhSJdCm6XC4Zf4sa9H0k:hover .VBnTTMQ6QZZgtkkX5mvn{\n    cursor: pointer;\n    transform: translateX(8px);\n}\n\n.VBnTTMQ6QZZgtkkX5mvn {\n    transition: transform 0.2s;\n    width: 25px;\n    position: absolute;\n    top: 11px;\n    left: 11px;\n    border-radius: 50%;\n}\n\n.BkyRS9nYujPqQfh5BGEp {\n    display: none;\n    background: white;\n    text-align: center;\n    justify-items: center;\n    position: absolute;\n    top:50%;\n    margin-top:-23.5px;\n    left:-23.5px;\n    height: 47px;\n    width: 47px;\n    border-radius: 50%;\n    border: 0;\n    padding-top: 4px;\n}\n\n.BkyRS9nYujPqQfh5BGEp:hover .DqkQVjNzVT0xKusbvXx_{\n    cursor: pointer;\n    transform: translateX(8px);\n}\n\n.DqkQVjNzVT0xKusbvXx_{\n    display: none;\n    rotate: 180deg;\n    width: 25px;\n    position: absolute;\n    top: 11px;\n    right: 11px;\n    border-radius: 50%;\n    transition: transform 0.2s;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"offerSpace": "HzaSNn5MaC55JdgvAhMk",
@@ -865,12 +851,12 @@ class allRestaurantsContainer {
             {
                 let promotionStrText = `
                 <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantPromotionTag}">${_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantPromotionTag}</div>
-                <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantPromotionBanner}"></span>
-                `;
+                <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantPromotionBanner}"></span>`;
                 return promotionStrText;
             }
             return `<div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].dontDisplay}"></div>`;
         }
+
         let cardIndex = 0, outerString=``;
         for(let i =0; i<_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails.length;i+=4)
         {
@@ -885,14 +871,14 @@ class allRestaurantsContainer {
                     <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].InnerWrapper}">
                         <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].ratingWrapper}">
                             ${_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.starImageSVG}
-                            <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantRating}">
+                            <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantRating}">
                             ${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantRating,'0.0')}
-                            </div>
+                            </span>
                         </div>
                         <span>•</span>
-                        <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantTime}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantTime,'10 MINS')}</div>
+                        <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantTime}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantTime,'10 MINS')}</span>
                         <span>•</span>
-                        <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantServingSize}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantServingSize,'₹500 FOR TWO')}</div>
+                        <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantServingSize}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantServingSize,'₹500 FOR TWO')}</span>
                     </div>
                     ${validatingPromotion(i,cardIndex)}
                     <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantOffers}">
@@ -988,7 +974,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".kWBHP9MZ78_ezbnYJ0Vg {\n    width: 100%;\n    min-height: calc(100vh - 340px);\n}\n\n.YEbNcwe1tudV2EpFBaJs {\n    margin: auto;\n    width: 1300px;\n    padding: 12px 30px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n}\n\n.UKHI0wtVPS7xr3yhs9Ec {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 40px;\n    height: 380px;\n}\n\n.sm7DtUECQWzgWrEqa4o6 {\n    height: fit-content;\n    width: 254px;\n    padding: 20px;\n    padding-bottom: 10px;\n    background: white;\n    position: relative;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n.sm7DtUECQWzgWrEqa4o6:hover {\n    border: 1px solid #d9d9db;\n}\n\n\n.sm7DtUECQWzgWrEqa4o6:hover .gYjGuymoYMX_x5lvf1Uf {\n    display: block;\n}\n\n.K72XqITQLX3RIV8vrMZE {\n    width: 254px;\n    display: block;\n}\n\n.yluMPY43JvSc8HltqFzh{\n    margin-top: 14px;\n    font-size: 17px;\n    font-weight: 500;\n}\n\n.aPNnH6KhG3_8jowCB9O6{\n    font-size: 13px;\n    margin-top:4px;\n    color: #686b78;\n}\n\n.xbmQXGWgDhQJFZMy1LeJ {\n    display: flex;\n    margin: 18px 0px;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 12px;\n}\n\n.If9o2e6miSc2U7oA11HU, ._rhIzJtPq7TGWpHXChkc, .xbmQXGWgDhQJFZMy1LeJ>span {\n    text-transform: uppercase;\n    color: #535665;\n    font-size: 12px;\n    font-weight: 300;\n}\n\n.W86jA4k043i9HtBUaDA7 {\n    background-color: #48c479;\n    height: 20px;\n    width: 42px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.uqXv8W_DxSPw7Wao9ncS{\n    font-size: 12px;\n    text-align: center;\n    color: white;\n}\n\n.FrKvjtiRVjI8rDfC1DCj {\n    color: white;\n    position: absolute;\n    font-weight: 300;\n    font-size: 12px;\n    top: 20px;\n    left: 12px;\n    background: rgb(58, 60, 65);\n    padding: 6px 10px;\n}\n\n.KewhAyt79SaZbPlNbOFH {    \n    position: absolute;\n    top: 46px;\n    left:12px;\n    border-left: 8px solid transparent;\n    border-top: 8px solid rgb(58, 60, 65);;\n}\n\n.mkRuzEA_IFjVddabVK2D {\n    display: flex;\n    gap: 4px;\n    height: 20px;\n    align-items: flex-start;\n    color: #926459;\n    margin: 14px 0px 10px;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.mPtOyYJG1WiHJkKnbzfb {\n    text-overflow: ellipsis;\n    font-size: 14px;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.gYjGuymoYMX_x5lvf1Uf {\n    display: none;\n    text-align: center;\n    color: #5d8ed5;\n    font-size: 12px;\n    font-weight: bold;\n    height: 20px;\n    text-transform: uppercase;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.gYjGuymoYMX_x5lvf1Uf:hover {\n    color:#5f616d;\n}\n\n.HzilLAaKMdI6xKeViLAz {\n    display: none;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".kWBHP9MZ78_ezbnYJ0Vg {\n    width: 100%;\n}\n\n.YEbNcwe1tudV2EpFBaJs {\n    margin: auto;\n    width: 1300px;\n    padding: 12px 30px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n}\n\n.UKHI0wtVPS7xr3yhs9Ec {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 40px;\n    height: 380px;\n}\n\n.sm7DtUECQWzgWrEqa4o6 {\n    height: fit-content;\n    width: 254px;\n    padding: 20px;\n    padding-bottom: 10px;\n    background: white;\n    position: relative;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n.sm7DtUECQWzgWrEqa4o6:hover {\n    border: 1px solid #d9d9db;\n}\n\n\n.sm7DtUECQWzgWrEqa4o6:hover .gYjGuymoYMX_x5lvf1Uf {\n    display: block;\n}\n\n.K72XqITQLX3RIV8vrMZE {\n    width: 254px;\n    display: block;\n}\n\n.yluMPY43JvSc8HltqFzh{\n    margin-top: 14px;\n    font-size: 17px;\n    font-weight: 500;\n}\n\n.aPNnH6KhG3_8jowCB9O6{\n    font-size: 13px;\n    margin-top:4px;\n    color: #686b78;\n}\n\n.xbmQXGWgDhQJFZMy1LeJ {\n    display: flex;\n    margin: 18px 0px;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 12px;\n}\n\n.If9o2e6miSc2U7oA11HU, ._rhIzJtPq7TGWpHXChkc, .xbmQXGWgDhQJFZMy1LeJ>span {\n    text-transform: uppercase;\n    color: #535665;\n    font-size: 12px;\n    font-weight: 300;\n}\n\n.W86jA4k043i9HtBUaDA7 {\n    background-color: #48c479;\n    height: 20px;\n    width: 42px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.uqXv8W_DxSPw7Wao9ncS{\n    font-size: 12px;\n    text-align: center;\n    color: white;\n}\n\n.FrKvjtiRVjI8rDfC1DCj {\n    color: white;\n    position: absolute;\n    font-weight: 300;\n    font-size: 12px;\n    top: 20px;\n    left: 12px;\n    background: rgb(58, 60, 65);\n    padding: 6px 10px;\n}\n\n.KewhAyt79SaZbPlNbOFH {    \n    position: absolute;\n    top: 46px;\n    left:12px;\n    border-left: 8px solid transparent;\n    border-top: 8px solid rgb(58, 60, 65);;\n}\n\n.mkRuzEA_IFjVddabVK2D {\n    display: flex;\n    gap: 4px;\n    height: 20px;\n    align-items: flex-start;\n    color: #926459;\n    margin: 14px 0px 10px;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.mPtOyYJG1WiHJkKnbzfb {\n    text-overflow: ellipsis;\n    font-size: 14px;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.gYjGuymoYMX_x5lvf1Uf {\n    display: none;\n    text-align: center;\n    color: #5d8ed5;\n    font-size: 12px;\n    font-weight: bold;\n    height: 20px;\n    text-transform: uppercase;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.gYjGuymoYMX_x5lvf1Uf:hover {\n    color:#5f616d;\n}\n\n.HzilLAaKMdI6xKeViLAz {\n    display: none;\n}\n\nul {\n    list-style-type: none;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"allRestaurantsContainer": "kWBHP9MZ78_ezbnYJ0Vg",
@@ -1187,19 +1173,19 @@ class restaurantNavigation {
         this.NavigationTemplate.innerHTML  = `
         <div class=${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].navigationWrapper}>
             <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].restaurantCount}">100 restaurants</div>
-            <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filtersWrapper}">
-                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Relevance</div>
-                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Delivery Time</div>
-                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Rating</div>
-                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Cost: Low to High</div>
-                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Cost: Low to High</div>
-                <div class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">
+            <ul class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filtersWrapper}">
+                <li class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Relevance</li>
+                <li class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Delivery Time</li>
+                <li class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Rating</li>
+                <li class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Cost: Low to High</li>
+                <li class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">Cost: Low to High</li>
+                <li class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterOptions}">
                     <span>Filters</span>
                     <span class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterImageWrapper}">
                         <img src="https://as1.ftcdn.net/v2/jpg/04/02/77/08/1000_F_402770898_3yxaOfo0e8sTJ6mgebY1KaOPcwgWKSHE.jpg" alt="hi" class="${_restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].filterImage}"/>
                     </span>
                 </div>
-            </div>
+            </ul>
         </div>
         `;
     }
@@ -1278,7 +1264,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".c5T6CwoXDDz_buuHxNn2 {\n    box-sizing: border-box;\n    background: white;\n    position: sticky;\n    height: 72px;\n    top: 0px;\n    margin:10px 0px;\n    z-index:1;\n    left: 0;\n}\n\n.ooAbLE2XPxiAI2CZxxcB{\n    box-sizing: border-box;\n    height: 100%;\n    display: flex;\n    align-items: end;\n    justify-content: space-between;\n    width: 1200px;\n    border-bottom: 1px solid #e9e9eb;\n    margin:auto;\n}\n\n.ERqgMbaWsV49NC4dEFbi {\n    box-sizing: border-box;\n    color:black;\n    font-size: 28px;\n    font-weight: 600;\n    padding-bottom: 10px;\n    text-align: end;\n}\n\n.a6wU4xsg02ZmyFfGUQdw {\n    box-sizing: border-box;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: flex-end;\n    margin-top: 8px;\n}\n\n.AQuauSZy1TCnBf5oqOan {\n    box-sizing: border-box;\n    margin-left:36px;\n    padding-bottom: 12px;\n    color: grey;\n    font-size: 16px;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan:hover {\n    cursor: pointer;\n    border-bottom: 1px solid grey;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child {\n    font-weight: bold;\n    color:black;\n}\n\n.vB99kcGo5EIjT5mqqCrt {\n    height: 20px;\n    width: 20px;\n    rotate: 90deg;\n    border-radius: 50%;\n    color: orange;\n    padding: 2px;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child:hover {\n    color: orange;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan > span:first-of-type {\n    padding-right: 8px;\n}\n\n.KBGhNOoS_ibGecf8x2hS {\n    position: relative;\n    top: 4px;\n    display: inline-block;\n    height: 25px;\n    width: 25px;\n    border: 2px solid orange;\n    border-radius: 50%;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".c5T6CwoXDDz_buuHxNn2 {\n    box-sizing: border-box;\n    background: white;\n    position: sticky;\n    height: 72px;\n    top: 0px;\n    margin:10px 0px;\n    z-index:1;\n    left: 0;\n}\n\n.ooAbLE2XPxiAI2CZxxcB{\n    box-sizing: border-box;\n    height: 100%;\n    display: flex;\n    align-items: end;\n    justify-content: space-between;\n    width: 1200px;\n    border-bottom: 1px solid #e9e9eb;\n    margin:auto;\n}\n\n.ERqgMbaWsV49NC4dEFbi {\n    box-sizing: border-box;\n    color:black;\n    font-size: 28px;\n    font-weight: 600;\n    padding-bottom: 10px;\n    text-align: end;\n}\n\n.a6wU4xsg02ZmyFfGUQdw {\n    box-sizing: border-box;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: flex-end;\n    margin-top: 8px;\n}\n\n.AQuauSZy1TCnBf5oqOan {\n    box-sizing: border-box;\n    margin-left:36px;\n    color: grey;\n    font-size: 16px;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan:hover {\n    cursor: pointer;\n    border-bottom: 1px solid grey;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child {\n    font-weight: bold;\n    color:black;\n}\n\n.vB99kcGo5EIjT5mqqCrt {\n    height: 20px;\n    width: 20px;\n    rotate: 90deg;\n    border-radius: 50%;\n    color: orange;\n    padding: 2px;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child:hover {\n    color: orange;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan > span:first-of-type {\n    padding-right: 8px;\n}\n\n.KBGhNOoS_ibGecf8x2hS {\n    position: relative;\n    top: 4px;\n    display: inline-block;\n    height: 25px;\n    width: 25px;\n    border: 2px solid orange;\n    border-radius: 50%;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"restaurantNavigation": "c5T6CwoXDDz_buuHxNn2",
@@ -1301,6 +1287,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "mainFooter": () => (/* binding */ mainFooter)
 /* harmony export */ });
 /* harmony import */ var _mainFooter_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+/* harmony import */ var _deliveryLocationsArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
+
 
 
 class mainFooter {
@@ -1309,41 +1297,47 @@ class mainFooter {
         this.mainFooterTemplate = document.createElement('div');
         this.mainFooterTemplate.className = _mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].mainFooterTemplate;
 
+        let locationsTemplate = () => {
+            let locationStr = ``;
+            for(let index = 0; index < _deliveryLocationsArray_js__WEBPACK_IMPORTED_MODULE_1__.locations.length; index++)
+                locationStr += `<li>${_deliveryLocationsArray_js__WEBPACK_IMPORTED_MODULE_1__.locations[index]}</li>`;
+            return locationStr;
+        }
+
         this.mainFooterTemplate.innerHTML = `
         <div class=${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].footerWrapper}>
             <div class=${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].companySupports}>
-                <div>
-                    <div>Company</div>
-                    <div>About us</div>
-                    <div>Team</div>
-                    <div>Careers</div>
-                    <div>Swiggy Blog</div>
-                    <div>Bug Bounty</div>
-                    <div>Swiggy One</div>
-                    <div>Swiggy Corporate</div>
-                    <div>Swiggy Instamart</div>
-                    <div>Swiggy Genie</div>
-                </div>
-                <div>
-                    <div>Contact</div>
-                    <div>Email: swiggyclonesupport@swiggy.com</div>
-                    <div>Instagram: _swiggy_clone_</div>
-                    <div>Helpline no: (+91)9876543210</div>
-                </div>
-                <div>
-                    <div>Legal</div>
-                    <div>No nothing is legal here</div>
-                    <div>Cloned from www.swiggy.com</div>
-                </div>
-                <div>
-                    <div>Social media handles</div>
+                <ul>
+                    <li>Company</li>
+                    <li>About us</li>
+                    <li>Team</li>
+                    <li>Careers</li>
+                    <li>Swiggy Blog</li>
+                    <li>Bug Bounty</li>
+                    <li>Swiggy One</li>
+                    <li>Swiggy Corporate</li>
+                    <li>Swiggy Instamart</li>
+                    <li>Swiggy Genie</li>
+                </ul>
+                <ul>
+                    <li>Contact</li>
+                    <li>Email: swiggyclonesupport@swiggy.com</li>
+                    <li>Instagram: _swiggy_clone_</li>
+                    <li>Helpline no: (+91)9876543210</li>
+                </ul>
+                <ul>
+                    <li>Legal</li>
+                    <li>No nothing is legal here</li>
+                    <li>Cloned from www.swiggy.com</li>
+                </ul>
+                <ul>
+                    <li>Social media handles</li>
                     <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2880px-Google_Play_Store_badge_EN.svg.png?20220907104002" alt="download options image" class= ${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].downloadOptions}>
                     <img src = "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="image for app store" class="${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].downloadOptions}" />
-                </div>
+                </ul>
             </div>
-
-            <div class=${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].availableLocations}>
-            HIII
+            <ul class=${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].availableLocations}>
+                ${locationsTemplate()}
             </div>
         </div>
         `;
@@ -1424,15 +1418,29 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "._2oQj9BbwWAZgV4MrRbjQ {\n    background-color: black;\n    color: white;\n    position: relative;\n    z-index:3;\n    margin-top: 40px;\n    padding: 80px 0px;\n}\n\n.S8yi7WXiM_VKXYjI7VCX {\n    margin: auto;\n    box-sizing: border-box;\n    min-width : 1200px;\n    max-width: 1200px;\n    display: flex;\n    flex-direction: column;\n}\n\n.Om5T3LHXNh_fxtfwAtSB {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > div {\n    display: flex;\n    flex-direction: column;\n    height: max-content;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > div > div {\n    color: white;\n    font-size: 14px;\n    padding-bottom: 12px;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > div :first-child {\n    color: grey;\n    font-size: 14px;\n    font-weight: 700;\n    margin-bottom: 32px;\n    text-transform: uppercase;\n}\n\n.bFa37uBeo0VYKrkxbCFR {\n    height: 100px;\n    width: 300px;\n    margin-bottom: 16px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "._2oQj9BbwWAZgV4MrRbjQ {\n    background-color: black;\n    color: white;\n    position: relative;\n    width: 100%;\n    z-index:3;\n    margin-top: 40px;\n    padding: 80px 0px;\n}\n\n.S8yi7WXiM_VKXYjI7VCX {\n    margin: auto;\n    min-width : 1200px;\n    max-width: 1200px;\n    display: flex;\n    flex-direction: column;\n}\n\n.Om5T3LHXNh_fxtfwAtSB {\n    min-width: 1200px;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n\n@media screen and (max-width: 1200px) {\n    .Om5T3LHXNh_fxtfwAtSB {\n        flex-direction: column;\n        justify-content: flex-start;\n        overflow: scroll;\n    }\n  }\n\n.Om5T3LHXNh_fxtfwAtSB > ul {\n    display: flex;\n    flex-direction: column;\n    height: max-content;\n    list-style-type: none;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul > div {\n    color: white;\n    font-size: 14px;\n    padding-bottom: 12px;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul :first-child {\n    color: grey;\n    font-size: 14px;\n    font-weight: 700;\n    margin-bottom: 32px;\n    text-transform: uppercase;\n}\n\n.bFa37uBeo0VYKrkxbCFR {\n    height: 100px;\n    width: 250px;\n    margin-bottom: 16px;\n}\n\n.zbZygVFG66ky_mYi8JXl {\n    list-style-type: none;\n    border-top: 1px solid white;\n    padding: 30px 0px;\n    height: 100px;\n    color: white;\n    font-size: 14px;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"mainFooterTemplate": "_2oQj9BbwWAZgV4MrRbjQ",
 	"footerWrapper": "S8yi7WXiM_VKXYjI7VCX",
 	"companySupports": "Om5T3LHXNh_fxtfwAtSB",
-	"downloadOptions": "bFa37uBeo0VYKrkxbCFR"
+	"downloadOptions": "bFa37uBeo0VYKrkxbCFR",
+	"availableLocations": "zbZygVFG66ky_mYi8JXl"
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 28 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "locations": () => (/* binding */ locations)
+/* harmony export */ });
+const locations = [`ahmedabad`, `vadodara`, 'gandhinagar', 'gurgaon',
+                    'delhi', 'mumbai' ,'banglore' ,'chennai' ];
+
 
 
 /***/ })

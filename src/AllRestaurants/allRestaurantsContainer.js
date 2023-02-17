@@ -18,12 +18,12 @@ export class allRestaurantsContainer {
             {
                 let promotionStrText = `
                 <div class="${styles.RestaurantPromotionTag}">${RestaurantDetails[i+cardIndex].RestaurantPromotionTag}</div>
-                <span class="${styles.RestaurantPromotionBanner}"></span>
-                `;
+                <span class="${styles.RestaurantPromotionBanner}"></span>`;
                 return promotionStrText;
             }
             return `<div class="${styles.dontDisplay}"></div>`;
         }
+
         let cardIndex = 0, outerString=``;
         for(let i =0; i<RestaurantDetails.length;i+=4)
         {
@@ -38,14 +38,14 @@ export class allRestaurantsContainer {
                     <div class="${styles.InnerWrapper}">
                         <div class="${styles.ratingWrapper}">
                             ${starImageSVG}
-                            <div class="${styles.RestaurantRating}">
+                            <span class="${styles.RestaurantRating}">
                             ${validate(RestaurantDetails[i+cardIndex].RestaurantRating,'0.0')}
-                            </div>
+                            </span>
                         </div>
                         <span>•</span>
-                        <div class="${styles.RestaurantTime}">${validate(RestaurantDetails[i+cardIndex].RestaurantTime,'10 MINS')}</div>
+                        <span class="${styles.RestaurantTime}">${validate(RestaurantDetails[i+cardIndex].RestaurantTime,'10 MINS')}</span>
                         <span>•</span>
-                        <div class="${styles.RestaurantServingSize}">${validate(RestaurantDetails[i+cardIndex].RestaurantServingSize,'₹500 FOR TWO')}</div>
+                        <span class="${styles.RestaurantServingSize}">${validate(RestaurantDetails[i+cardIndex].RestaurantServingSize,'₹500 FOR TWO')}</span>
                     </div>
                     ${validatingPromotion(i,cardIndex)}
                     <div class="${styles.RestaurantOffers}">
