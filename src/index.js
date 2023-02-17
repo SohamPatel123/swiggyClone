@@ -14,7 +14,7 @@ head.innerHTML +=`<link rel="icon" type="image/x-icon" href="https://cdn.worldve
 
 let header = new mainHeader({logoURL:'https://www.swiggy.com/',logoSvg:logoSvg});
 let offersSpace = new offersHeader(...offerImages);
-let combinedHeader = document.createElement('div');
+let combinedHeader = document.createElement('header');
 combinedHeader.className = styles.header;
 combinedHeader.append(header.get());
 combinedHeader.append(offersSpace.get());

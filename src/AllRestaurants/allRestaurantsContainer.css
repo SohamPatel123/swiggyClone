@@ -18,6 +18,21 @@
     height: 380px;
 }
 
+@media screen and (max-width:900px) {
+    .RestaurantWrapper {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .outerCont{
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }    
+}
+
 .Card {
     height: fit-content;
     width: 254px;

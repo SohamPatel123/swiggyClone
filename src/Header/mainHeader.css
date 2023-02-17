@@ -12,10 +12,20 @@
     align-items: center;
     justify-content: space-between;
     margin:0px auto;
-    max-width: 1200px;
-    min-width: 1200px;
+    max-width: min(100%,1200px);
+    min-width: min(100%,1200px);
     height:80px;
     background: white;
+}
+
+@media screen and (max-width:1200px) {
+    .mainHeader {
+        flex-direction: row-reverse;
+    }
+    .globalOption :not(:first-child), .locationValue {
+        display: none;
+    }
+
 }
 
 .wrapper {

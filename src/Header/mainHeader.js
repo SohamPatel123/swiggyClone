@@ -11,21 +11,17 @@ export class mainHeader {
         let globalOptionsTemplate = ``;
         for (const [key, value] of Object.entries(globalOptionsLogo)) {
             
+            let newTag = '';
             if(key=="Offers")
+                newTag = `<span class="${styles.newTag}">NEW</span>`;
+            
             globalOptionsTemplate += `
-            <div class = "${styles.globalOption}">
-                <span>${value}</span>
-                <span>${key}</span> 
-                <span class="${styles.newTag}">NEW</span>
-            </div>
-            `;
-            else
-            globalOptionsTemplate += `
-            <div class = "${styles.globalOption}">
-                <span>${value}</span>
-                <span>${key}</span> 
-            </div>
-            `;
+                <div class = "${styles.globalOption}">
+                    <span>${value}</span>
+                    <span>${key}</span> 
+                    ${newTag}
+                </div>
+                `;
         }
 
         this.mainHeaderTemplate.innerHTML = `

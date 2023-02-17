@@ -2,7 +2,7 @@ import styles from "./restaurantNavigation.css";
 
 class restaurantNavigation {
     constructor (args) {
-        this.NavigationTemplate = document.createElement('div');
+        this.NavigationTemplate = document.createElement('nav');
         this.NavigationTemplate.className = styles.restaurantNavigation;
 
         this.NavigationTemplate.innerHTML  = `

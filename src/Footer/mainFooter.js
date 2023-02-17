@@ -4,7 +4,7 @@ import {locations} from "./deliveryLocationsArray.js";
 class mainFooter {
 
     constructor (args) {
-        this.mainFooterTemplate = document.createElement('div');
+        this.mainFooterTemplate = document.createElement('footer');
         this.mainFooterTemplate.className = styles.mainFooterTemplate;
 
         let locationsTemplate = () => {
@@ -36,8 +36,8 @@ class mainFooter {
                     <li>Helpline no: (+91)9876543210</li>
                 </ul>
                 <ul>
-                    <li>Legal</li>
-                    <li>No nothing is legal here</li>
+                    <li>Details</li>
+                    <li>This is a task.</li>
                     <li>Cloned from www.swiggy.com</li>
                 </ul>
                 <ul>

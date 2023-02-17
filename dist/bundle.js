@@ -24,21 +24,17 @@ class mainHeader {
         let globalOptionsTemplate = ``;
         for (const [key, value] of Object.entries(_images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_1__.globalOptionsLogo)) {
             
+            let newTag = '';
             if(key=="Offers")
+                newTag = `<span class="${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].newTag}">NEW</span>`;
+            
             globalOptionsTemplate += `
-            <div class = "${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].globalOption}">
-                <span>${value}</span>
-                <span>${key}</span> 
-                <span class="${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].newTag}">NEW</span>
-            </div>
-            `;
-            else
-            globalOptionsTemplate += `
-            <div class = "${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].globalOption}">
-                <span>${value}</span>
-                <span>${key}</span> 
-            </div>
-            `;
+                <div class = "${_mainHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].globalOption}">
+                    <span>${value}</span>
+                    <span>${key}</span> 
+                    ${newTag}
+                </div>
+                `;
         }
 
         this.mainHeaderTemplate.innerHTML = `
@@ -429,21 +425,21 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".H2NPdT_uDBxpThy1UOJD {\n    background-color: white;\n    position:sticky;\n    top:0px;\n    z-index:1;\n    min-height: 80px;\n    padding: 0px 20px;\n}\n\n.TIIeTZcwn8BkQosE76ed {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    margin:0px auto;\n    max-width: 1200px;\n    min-width: 1200px;\n    height:80px;\n    background: white;\n}\n\n.YDVIs_FMsYPP6MSOIzrB {\n    display: flex;\n    align-items: center;\n}\n\n.POqybUUFjyFdsQ1ue3Au {\n    background: white;\n    height: 50px;\n    margin-right:16px;\n}\n\n.WAuYZFb4E3yHV7F7nQuY {\n    margin-right: 16px;\n    background: white;\n    height: 50px;\n    width:auto;\n    transition: transform 0.3s;\n}\n\n.WAuYZFb4E3yHV7F7nQuY:hover {\n    cursor: pointer;\n    transform:scale(1.1);\n}\n\n\n.e0SlavpRYsUpqDnE2Vuz {\n    background: white;\n    color: #686b78;\n    margin:16px;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover {\n    cursor: pointer;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .N2IJ5tipSEMfjVRDCHFY {\n    color:#fc8018;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .N2IJ5tipSEMfjVRDCHFY::after {\n    background:#fc8018;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .oO3rpCmkOm8iHHWBVpRm {\n    color: #93959f;\n}\n\n.oO3rpCmkOm8iHHWBVpRm {\n    margin-left:4px;\n    margin-right:4px;\n    line-height: 1.2;\n    align-items: center;\n    background: white;\n    font-size: 14px;\n}\n\n.ikmFLBV6VMgNfSuo36mj svg{\n    height:13px;\n    width: 12.6px;\n}\n\n\n.N2IJ5tipSEMfjVRDCHFY {\n    content: \"Sector 42\";\n    display: inline-block;\n    font-size: 14px;\n    font-weight: 100;\n    color: #3D4152;\n    font-weight: bolder;\n    height: 15px;\n    min-width:30px;\n    margin-left: 16px;\n    position: relative;\n    top:0;\n}\n\n.N2IJ5tipSEMfjVRDCHFY:after {\n    content: \"\";\n    position: absolute;\n    height: 2px;\n    left: 0;\n    bottom: -5px;\n    width: 100%;\n    background: #3d4152;\n}\n\n.ERHcojh36YefytpU3nGV {\n    background: white;\n    height: 100%;\n    display:flex;\n    justify-content: space-between;\n    flex-direction: row-reverse;\n    align-items: center;\n    min-width: 20%;\n}\n\n.j_HE90uE6hGN6AffCOD_ {\n    color: #ffa700;\n    font-size: 10px;\n    top: 0px;\n    font-weight: 600;\n    position: absolute;\n    right: -24px;\n    text-transform: uppercase;\n}\n\n.jj1xLNwer5bvbyrW8BST {\n    position: relative;\n    background-color: white;\n    font-weight: 500;\n    font-size: 16px;\n    color: #3D4152;\n    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;\n    letter-spacing: 0;\n    line-height: 1.2;\n    margin-right:60px;\n    align-items: center;\n    display: flex;\n    gap: 8px;\n}\n\n.jj1xLNwer5bvbyrW8BST:first-child {\n    margin-right:0px;\n}\n\n.jj1xLNwer5bvbyrW8BST:hover {\n    cursor: pointer;\n    color: #fc8018;\n}\n\n.jj1xLNwer5bvbyrW8BST:hover svg{\n    fill:#fc8018;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".H2NPdT_uDBxpThy1UOJD {\n    background-color: white;\n    position:sticky;\n    top:0px;\n    z-index:1;\n    min-height: 80px;\n    padding: 0px 20px;\n}\n\n.TIIeTZcwn8BkQosE76ed {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    margin:0px auto;\n    max-width: min(100%,1200px);\n    min-width: min(100%,1200px);\n    height:80px;\n    background: white;\n}\n\n@media screen and (max-width:1200px) {\n    .TIIeTZcwn8BkQosE76ed {\n        flex-direction: row-reverse;\n    }\n    .jj1xLNwer5bvbyrW8BST :not(:first-child), .oO3rpCmkOm8iHHWBVpRm {\n        display: none;\n    }\n\n}\n\n.YDVIs_FMsYPP6MSOIzrB {\n    display: flex;\n    align-items: center;\n}\n\n.POqybUUFjyFdsQ1ue3Au {\n    background: white;\n    height: 50px;\n    margin-right:16px;\n}\n\n.WAuYZFb4E3yHV7F7nQuY {\n    margin-right: 16px;\n    background: white;\n    height: 50px;\n    width:auto;\n    transition: transform 0.3s;\n}\n\n.WAuYZFb4E3yHV7F7nQuY:hover {\n    cursor: pointer;\n    transform:scale(1.1);\n}\n\n\n.e0SlavpRYsUpqDnE2Vuz {\n    background: white;\n    color: #686b78;\n    margin:16px;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover {\n    cursor: pointer;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .N2IJ5tipSEMfjVRDCHFY {\n    color:#fc8018;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .N2IJ5tipSEMfjVRDCHFY::after {\n    background:#fc8018;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .oO3rpCmkOm8iHHWBVpRm {\n    color: #93959f;\n}\n\n.oO3rpCmkOm8iHHWBVpRm {\n    margin-left:4px;\n    margin-right:4px;\n    line-height: 1.2;\n    align-items: center;\n    background: white;\n    font-size: 14px;\n}\n\n.ikmFLBV6VMgNfSuo36mj svg{\n    height:13px;\n    width: 12.6px;\n}\n\n\n.N2IJ5tipSEMfjVRDCHFY {\n    content: \"Sector 42\";\n    display: inline-block;\n    font-size: 14px;\n    font-weight: 100;\n    color: #3D4152;\n    font-weight: bolder;\n    height: 15px;\n    min-width:30px;\n    margin-left: 16px;\n    position: relative;\n    top:0;\n}\n\n.N2IJ5tipSEMfjVRDCHFY:after {\n    content: \"\";\n    position: absolute;\n    height: 2px;\n    left: 0;\n    bottom: -5px;\n    width: 100%;\n    background: #3d4152;\n}\n\n.ERHcojh36YefytpU3nGV {\n    background: white;\n    height: 100%;\n    display:flex;\n    justify-content: space-between;\n    flex-direction: row-reverse;\n    align-items: center;\n    min-width: 20%;\n}\n\n.j_HE90uE6hGN6AffCOD_ {\n    color: #ffa700;\n    font-size: 10px;\n    top: 0px;\n    font-weight: 600;\n    position: absolute;\n    right: -24px;\n    text-transform: uppercase;\n}\n\n.jj1xLNwer5bvbyrW8BST {\n    position: relative;\n    background-color: white;\n    font-weight: 500;\n    font-size: 16px;\n    color: #3D4152;\n    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;\n    letter-spacing: 0;\n    line-height: 1.2;\n    margin-right:60px;\n    align-items: center;\n    display: flex;\n    gap: 8px;\n}\n\n.jj1xLNwer5bvbyrW8BST:first-child {\n    margin-right:0px;\n}\n\n.jj1xLNwer5bvbyrW8BST:hover {\n    cursor: pointer;\n    color: #fc8018;\n}\n\n.jj1xLNwer5bvbyrW8BST:hover svg{\n    fill:#fc8018;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"headerWrapper": "H2NPdT_uDBxpThy1UOJD",
 	"mainHeader": "TIIeTZcwn8BkQosE76ed",
+	"globalOption": "jj1xLNwer5bvbyrW8BST",
+	"locationValue": "oO3rpCmkOm8iHHWBVpRm",
 	"wrapper": "YDVIs_FMsYPP6MSOIzrB",
 	"logo": "POqybUUFjyFdsQ1ue3Au",
 	"logoImage": "WAuYZFb4E3yHV7F7nQuY",
 	"userLocation": "e0SlavpRYsUpqDnE2Vuz",
 	"preciseLocation": "N2IJ5tipSEMfjVRDCHFY",
-	"locationValue": "oO3rpCmkOm8iHHWBVpRm",
 	"locationDropDown": "ikmFLBV6VMgNfSuo36mj",
 	"globalOptionsMenu": "ERHcojh36YefytpU3nGV",
-	"newTag": "j_HE90uE6hGN6AffCOD_",
-	"globalOption": "jj1xLNwer5bvbyrW8BST"
+	"newTag": "j_HE90uE6hGN6AffCOD_"
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -974,7 +970,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".kWBHP9MZ78_ezbnYJ0Vg {\n    width: 100%;\n}\n\n.YEbNcwe1tudV2EpFBaJs {\n    margin: auto;\n    width: 1300px;\n    padding: 12px 30px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n}\n\n.UKHI0wtVPS7xr3yhs9Ec {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 40px;\n    height: 380px;\n}\n\n.sm7DtUECQWzgWrEqa4o6 {\n    height: fit-content;\n    width: 254px;\n    padding: 20px;\n    padding-bottom: 10px;\n    background: white;\n    position: relative;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n.sm7DtUECQWzgWrEqa4o6:hover {\n    border: 1px solid #d9d9db;\n}\n\n\n.sm7DtUECQWzgWrEqa4o6:hover .gYjGuymoYMX_x5lvf1Uf {\n    display: block;\n}\n\n.K72XqITQLX3RIV8vrMZE {\n    width: 254px;\n    display: block;\n}\n\n.yluMPY43JvSc8HltqFzh{\n    margin-top: 14px;\n    font-size: 17px;\n    font-weight: 500;\n}\n\n.aPNnH6KhG3_8jowCB9O6{\n    font-size: 13px;\n    margin-top:4px;\n    color: #686b78;\n}\n\n.xbmQXGWgDhQJFZMy1LeJ {\n    display: flex;\n    margin: 18px 0px;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 12px;\n}\n\n.If9o2e6miSc2U7oA11HU, ._rhIzJtPq7TGWpHXChkc, .xbmQXGWgDhQJFZMy1LeJ>span {\n    text-transform: uppercase;\n    color: #535665;\n    font-size: 12px;\n    font-weight: 300;\n}\n\n.W86jA4k043i9HtBUaDA7 {\n    background-color: #48c479;\n    height: 20px;\n    width: 42px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.uqXv8W_DxSPw7Wao9ncS{\n    font-size: 12px;\n    text-align: center;\n    color: white;\n}\n\n.FrKvjtiRVjI8rDfC1DCj {\n    color: white;\n    position: absolute;\n    font-weight: 300;\n    font-size: 12px;\n    top: 20px;\n    left: 12px;\n    background: rgb(58, 60, 65);\n    padding: 6px 10px;\n}\n\n.KewhAyt79SaZbPlNbOFH {    \n    position: absolute;\n    top: 46px;\n    left:12px;\n    border-left: 8px solid transparent;\n    border-top: 8px solid rgb(58, 60, 65);;\n}\n\n.mkRuzEA_IFjVddabVK2D {\n    display: flex;\n    gap: 4px;\n    height: 20px;\n    align-items: flex-start;\n    color: #926459;\n    margin: 14px 0px 10px;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.mPtOyYJG1WiHJkKnbzfb {\n    text-overflow: ellipsis;\n    font-size: 14px;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.gYjGuymoYMX_x5lvf1Uf {\n    display: none;\n    text-align: center;\n    color: #5d8ed5;\n    font-size: 12px;\n    font-weight: bold;\n    height: 20px;\n    text-transform: uppercase;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.gYjGuymoYMX_x5lvf1Uf:hover {\n    color:#5f616d;\n}\n\n.HzilLAaKMdI6xKeViLAz {\n    display: none;\n}\n\nul {\n    list-style-type: none;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".kWBHP9MZ78_ezbnYJ0Vg {\n    width: 100%;\n}\n\n.YEbNcwe1tudV2EpFBaJs {\n    margin: auto;\n    width: 1300px;\n    padding: 12px 30px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n}\n\n.UKHI0wtVPS7xr3yhs9Ec {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 40px;\n    height: 380px;\n}\n\n@media screen and (max-width:900px) {\n    .YEbNcwe1tudV2EpFBaJs {\n        width: 100%;\n        justify-content: center;\n        align-items: center;\n        height: fit-content;\n    }\n    .UKHI0wtVPS7xr3yhs9Ec{\n        height: fit-content;\n        align-items: center;\n        justify-content: center;\n        flex-wrap: wrap;\n    }    \n}\n\n.sm7DtUECQWzgWrEqa4o6 {\n    height: fit-content;\n    width: 254px;\n    padding: 20px;\n    padding-bottom: 10px;\n    background: white;\n    position: relative;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n.sm7DtUECQWzgWrEqa4o6:hover {\n    border: 1px solid #d9d9db;\n}\n\n\n.sm7DtUECQWzgWrEqa4o6:hover .gYjGuymoYMX_x5lvf1Uf {\n    display: block;\n}\n\n.K72XqITQLX3RIV8vrMZE {\n    width: 254px;\n    display: block;\n}\n\n.yluMPY43JvSc8HltqFzh{\n    margin-top: 14px;\n    font-size: 17px;\n    font-weight: 500;\n}\n\n.aPNnH6KhG3_8jowCB9O6{\n    font-size: 13px;\n    margin-top:4px;\n    color: #686b78;\n}\n\n.xbmQXGWgDhQJFZMy1LeJ {\n    display: flex;\n    margin: 18px 0px;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 12px;\n}\n\n.If9o2e6miSc2U7oA11HU, ._rhIzJtPq7TGWpHXChkc, .xbmQXGWgDhQJFZMy1LeJ>span {\n    text-transform: uppercase;\n    color: #535665;\n    font-size: 12px;\n    font-weight: 300;\n}\n\n.W86jA4k043i9HtBUaDA7 {\n    background-color: #48c479;\n    height: 20px;\n    width: 42px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.uqXv8W_DxSPw7Wao9ncS{\n    font-size: 12px;\n    text-align: center;\n    color: white;\n}\n\n.FrKvjtiRVjI8rDfC1DCj {\n    color: white;\n    position: absolute;\n    font-weight: 300;\n    font-size: 12px;\n    top: 20px;\n    left: 12px;\n    background: rgb(58, 60, 65);\n    padding: 6px 10px;\n}\n\n.KewhAyt79SaZbPlNbOFH {    \n    position: absolute;\n    top: 46px;\n    left:12px;\n    border-left: 8px solid transparent;\n    border-top: 8px solid rgb(58, 60, 65);;\n}\n\n.mkRuzEA_IFjVddabVK2D {\n    display: flex;\n    gap: 4px;\n    height: 20px;\n    align-items: flex-start;\n    color: #926459;\n    margin: 14px 0px 10px;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.mPtOyYJG1WiHJkKnbzfb {\n    text-overflow: ellipsis;\n    font-size: 14px;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.gYjGuymoYMX_x5lvf1Uf {\n    display: none;\n    text-align: center;\n    color: #5d8ed5;\n    font-size: 12px;\n    font-weight: bold;\n    height: 20px;\n    text-transform: uppercase;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.gYjGuymoYMX_x5lvf1Uf:hover {\n    color:#5f616d;\n}\n\n.HzilLAaKMdI6xKeViLAz {\n    display: none;\n}\n\nul {\n    list-style-type: none;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"allRestaurantsContainer": "kWBHP9MZ78_ezbnYJ0Vg",
@@ -1167,7 +1163,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class restaurantNavigation {
     constructor (args) {
-        this.NavigationTemplate = document.createElement('div');
+        this.NavigationTemplate = document.createElement('nav');
         this.NavigationTemplate.className = _restaurantNavigation_css__WEBPACK_IMPORTED_MODULE_0__["default"].restaurantNavigation;
 
         this.NavigationTemplate.innerHTML  = `
@@ -1294,7 +1290,7 @@ __webpack_require__.r(__webpack_exports__);
 class mainFooter {
 
     constructor (args) {
-        this.mainFooterTemplate = document.createElement('div');
+        this.mainFooterTemplate = document.createElement('footer');
         this.mainFooterTemplate.className = _mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].mainFooterTemplate;
 
         let locationsTemplate = () => {
@@ -1326,8 +1322,8 @@ class mainFooter {
                     <li>Helpline no: (+91)9876543210</li>
                 </ul>
                 <ul>
-                    <li>Legal</li>
-                    <li>No nothing is legal here</li>
+                    <li>Details</li>
+                    <li>This is a task.</li>
                     <li>Cloned from www.swiggy.com</li>
                 </ul>
                 <ul>
@@ -1418,7 +1414,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "._2oQj9BbwWAZgV4MrRbjQ {\n    background-color: black;\n    color: white;\n    position: relative;\n    width: 100%;\n    z-index:3;\n    margin-top: 40px;\n    padding: 80px 0px;\n}\n\n.S8yi7WXiM_VKXYjI7VCX {\n    margin: auto;\n    min-width : 1200px;\n    max-width: 1200px;\n    display: flex;\n    flex-direction: column;\n}\n\n.Om5T3LHXNh_fxtfwAtSB {\n    min-width: 1200px;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n\n@media screen and (max-width: 1200px) {\n    .Om5T3LHXNh_fxtfwAtSB {\n        flex-direction: column;\n        justify-content: flex-start;\n        overflow: scroll;\n    }\n  }\n\n.Om5T3LHXNh_fxtfwAtSB > ul {\n    display: flex;\n    flex-direction: column;\n    height: max-content;\n    list-style-type: none;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul > div {\n    color: white;\n    font-size: 14px;\n    padding-bottom: 12px;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul :first-child {\n    color: grey;\n    font-size: 14px;\n    font-weight: 700;\n    margin-bottom: 32px;\n    text-transform: uppercase;\n}\n\n.bFa37uBeo0VYKrkxbCFR {\n    height: 100px;\n    width: 250px;\n    margin-bottom: 16px;\n}\n\n.zbZygVFG66ky_mYi8JXl {\n    list-style-type: none;\n    border-top: 1px solid white;\n    padding: 30px 0px;\n    height: 100px;\n    color: white;\n    font-size: 14px;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "._2oQj9BbwWAZgV4MrRbjQ {\n    background-color: black;\n    color: white;\n    position: relative;\n    width: 100%;\n    z-index:3;\n    margin-top: 40px;\n    padding: 80px 0px;\n}\n\n.S8yi7WXiM_VKXYjI7VCX {\n    margin: auto;\n    min-width: min(100%, 1200px);\n    max-width: min(100%, 1200px);\n    display: flex;\n    flex-direction: column;\n}\n\n.Om5T3LHXNh_fxtfwAtSB {\n    min-width: min(100%, 1200px);\n    max-width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n\n@media screen and (max-width: 1200px) {\n    .Om5T3LHXNh_fxtfwAtSB {\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n  }\n\n.Om5T3LHXNh_fxtfwAtSB > ul {\n    display: flex;\n    flex-direction: column;\n    height: max-content;\n    list-style-type: none;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul  li {\n    color: white;\n    font-size: 14px;\n    padding-bottom: 12px;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul :first-child {\n    color: grey;\n    font-size: 14px;\n    font-weight: 700;\n    margin-bottom: 32px;\n    text-transform: uppercase;\n}\n\n.bFa37uBeo0VYKrkxbCFR {\n    height: 100px;\n    width: 250px;\n    margin-bottom: 16px;\n}\n\n.zbZygVFG66ky_mYi8JXl {\n    list-style-type: none;\n    border-top: 1px solid white;\n    padding: 30px 0px;\n    height: 100px;\n    color: white;\n    font-size: 14px;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n    justify-items: center;\n    align-items: center;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"mainFooterTemplate": "_2oQj9BbwWAZgV4MrRbjQ",
@@ -1544,7 +1540,7 @@ head.innerHTML +=`<link rel="icon" type="image/x-icon" href="https://cdn.worldve
 
 let header = new _Header_mainHeader_js__WEBPACK_IMPORTED_MODULE_0__.mainHeader({logoURL:'https://www.swiggy.com/',logoSvg:_images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__.logoSvg});
 let offersSpace = new _Header_offersHeader_js__WEBPACK_IMPORTED_MODULE_1__.offersHeader(..._images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__.offerImages);
-let combinedHeader = document.createElement('div');
+let combinedHeader = document.createElement('header');
 combinedHeader.className = _styles_main_css__WEBPACK_IMPORTED_MODULE_2__["default"].header;
 combinedHeader.append(header.get());
 combinedHeader.append(offersSpace.get());
