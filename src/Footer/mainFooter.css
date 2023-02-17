@@ -1,0 +1,49 @@
+.mainFooterTemplate {
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index:3;
+    margin-top: 40px;
+    padding: 80px 0px;
+}
+
+.footerWrapper {
+    margin: auto;
+    box-sizing: border-box;
+    min-width : 1200px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.companySupports {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.companySupports > div {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.companySupports > div > div {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+.companySupports > div :first-child {
+    color: grey;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.downloadOptions {
+    height: 100px;
+    width: 300px;
+    margin-bottom: 16px;
+}

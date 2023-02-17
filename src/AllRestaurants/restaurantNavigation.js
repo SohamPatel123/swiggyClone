@@ -24,6 +24,7 @@ class restaurantNavigation {
         </div>
         `;
     }
+    
     get() {
         return this.NavigationTemplate;
     }

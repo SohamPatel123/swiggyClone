@@ -1203,6 +1203,7 @@ class restaurantNavigation {
         </div>
         `;
     }
+    
     get() {
         return this.NavigationTemplate;
     }
@@ -1291,6 +1292,149 @@ ___CSS_LOADER_EXPORT___.locals = {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
+/***/ }),
+/* 25 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "mainFooter": () => (/* binding */ mainFooter)
+/* harmony export */ });
+/* harmony import */ var _mainFooter_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+
+
+class mainFooter {
+
+    constructor (args) {
+        this.mainFooterTemplate = document.createElement('div');
+        this.mainFooterTemplate.className = _mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].mainFooterTemplate;
+
+        this.mainFooterTemplate.innerHTML = `
+        <div class=${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].footerWrapper}>
+            <div class=${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].companySupports}>
+                <div>
+                    <div>Company</div>
+                    <div>About us</div>
+                    <div>Team</div>
+                    <div>Careers</div>
+                    <div>Swiggy Blog</div>
+                    <div>Bug Bounty</div>
+                    <div>Swiggy One</div>
+                    <div>Swiggy Corporate</div>
+                    <div>Swiggy Instamart</div>
+                    <div>Swiggy Genie</div>
+                </div>
+                <div>
+                    <div>Contact</div>
+                    <div>Email: swiggyclonesupport@swiggy.com</div>
+                    <div>Instagram: _swiggy_clone_</div>
+                    <div>Helpline no: (+91)9876543210</div>
+                </div>
+                <div>
+                    <div>Legal</div>
+                    <div>No nothing is legal here</div>
+                    <div>Cloned from www.swiggy.com</div>
+                </div>
+                <div>
+                    <div>Social media handles</div>
+                    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2880px-Google_Play_Store_badge_EN.svg.png?20220907104002" alt="download options image" class= ${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].downloadOptions}>
+                    <img src = "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="image for app store" class="${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].downloadOptions}" />
+                </div>
+            </div>
+
+            <div class=${_mainFooter_css__WEBPACK_IMPORTED_MODULE_0__["default"].availableLocations}>
+            HIII
+            </div>
+        </div>
+        `;
+    }
+
+    get() {
+        return this.mainFooterTemplate;
+    }
+}
+
+
+
+
+/***/ }),
+/* 26 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_mainFooter_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(27);
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_mainFooter_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_mainFooter_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_mainFooter_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_1_mainFooter_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+/* 27 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "._2oQj9BbwWAZgV4MrRbjQ {\n    background-color: black;\n    color: white;\n    position: relative;\n    z-index:3;\n    margin-top: 40px;\n    padding: 80px 0px;\n}\n\n.S8yi7WXiM_VKXYjI7VCX {\n    margin: auto;\n    box-sizing: border-box;\n    min-width : 1200px;\n    max-width: 1200px;\n    display: flex;\n    flex-direction: column;\n}\n\n.Om5T3LHXNh_fxtfwAtSB {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > div {\n    display: flex;\n    flex-direction: column;\n    height: max-content;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > div > div {\n    color: white;\n    font-size: 14px;\n    padding-bottom: 12px;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > div :first-child {\n    color: grey;\n    font-size: 14px;\n    font-weight: 700;\n    margin-bottom: 32px;\n    text-transform: uppercase;\n}\n\n.bFa37uBeo0VYKrkxbCFR {\n    height: 100px;\n    width: 300px;\n    margin-bottom: 16px;\n}", ""]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"mainFooterTemplate": "_2oQj9BbwWAZgV4MrRbjQ",
+	"footerWrapper": "S8yi7WXiM_VKXYjI7VCX",
+	"companySupports": "Om5T3LHXNh_fxtfwAtSB",
+	"downloadOptions": "bFa37uBeo0VYKrkxbCFR"
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -1375,6 +1519,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
 /* harmony import */ var _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(18);
 /* harmony import */ var _AllRestaurants_restaurantNavigation_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(22);
+/* harmony import */ var _Footer_mainFooter_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(25);
+
 
 
 
@@ -1400,9 +1546,11 @@ body.append(combinedHeader);
 
 let RestaurantHeader = new _AllRestaurants_restaurantNavigation_js__WEBPACK_IMPORTED_MODULE_5__.restaurantNavigation();
 let allRestaurants = new _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__.allRestaurantsContainer();
+let restaurantsFooter = new _Footer_mainFooter_js__WEBPACK_IMPORTED_MODULE_6__.mainFooter();
 let combinedBody = document.createElement('div');
 combinedBody.append(RestaurantHeader.get());
 combinedBody.append(allRestaurants.get());
+combinedBody.append(restaurantsFooter.get());
 body.append(combinedBody);
 
 })();
