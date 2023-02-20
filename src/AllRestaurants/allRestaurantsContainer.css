@@ -20,10 +20,12 @@
 
 @media screen and (max-width:900px) {
     .RestaurantWrapper {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+        width: 100vw;
+        max-width: 700px;
         height: fit-content;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .outerCont{
         height: fit-content;
