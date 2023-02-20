@@ -1,8 +1,9 @@
 import styles from "./allRestaurantsContainer.css";
-import { RestaurantDetails, starImageSVG, discountImageSVG, defaultImage } from "./RestaurantsDetails.js";
+import { starImageSVG, discountImageSVG, defaultImage } from "./RestaurantsDetails.js";
 
 export class allRestaurantsContainer {
-    constructor(args) {
+    constructor(...args) {
+        let [RestaurantDetails] = args;
         this.allRestaurantsTemplate = document.createElement('div');
         this.allRestaurantsTemplate.className = `${styles.allRestaurantsContainer}`;
 
@@ -58,7 +59,7 @@ export class allRestaurantsContainer {
             }
             outerString += innerString + `</div>`;
             cardIndex=0;
-
+            
         }
 
         this.allRestaurantsTemplate.innerHTML = `

@@ -7,8 +7,8 @@ export class offersHeader {
         let val = [...args], offersCards =``;
         for(let index = 0; index != val.length ;index++)
         {
-            offersCards += `<span class="${styles.cards}">
-                                <img src = "${val[index]}" alt="offer number ${index}" width="260px" height="260px"/>
+            offersCards += `<span class="${styles.cards}" id="cards">
+                                <img src = "${val[index]}" id = "${index}" alt="offer number ${index}" width="260px" height="260px"/>
                             </span>`;
         }
 
@@ -50,9 +50,9 @@ export class offersHeader {
             this.offersHeaderTemplate.querySelector("#rightScrollImage").style.display = scrollValue > (-offset * (val.length - 3)) ? 'block':'none';
         }
 
+        this.offersHeaderTemplate.querySelector(`.${styles.offerWrapper}`).addEventListener('dblclick', this.sayHi);
         this.offersHeaderTemplate.querySelector('#rightScroll').addEventListener('click', handleCarouselScroll);
         this.offersHeaderTemplate.querySelector('#leftScroll').addEventListener('click', handleCarouselScroll);
-        
     }
 
     get () {
