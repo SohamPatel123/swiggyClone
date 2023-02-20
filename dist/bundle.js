@@ -425,7 +425,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".H2NPdT_uDBxpThy1UOJD {\n    background-color: white;\n    position:sticky;\n    top:0px;\n    z-index:1;\n    min-height: 80px;\n    padding: 0px 20px;\n}\n\n.TIIeTZcwn8BkQosE76ed {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    margin:0px auto;\n    max-width: min(100%,1200px);\n    min-width: min(100%,1200px);\n    height:80px;\n    background: white;\n}\n\n@media screen and (max-width:1200px) {\n    .TIIeTZcwn8BkQosE76ed {\n        flex-direction: row-reverse;\n    }\n    .jj1xLNwer5bvbyrW8BST :not(:first-child), .oO3rpCmkOm8iHHWBVpRm {\n        display: none;\n    }\n\n}\n\n.YDVIs_FMsYPP6MSOIzrB {\n    display: flex;\n    align-items: center;\n}\n\n.POqybUUFjyFdsQ1ue3Au {\n    background: white;\n    height: 50px;\n    margin-right:16px;\n}\n\n.WAuYZFb4E3yHV7F7nQuY {\n    margin-right: 16px;\n    background: white;\n    height: 50px;\n    width:auto;\n    transition: transform 0.3s;\n}\n\n.WAuYZFb4E3yHV7F7nQuY:hover {\n    cursor: pointer;\n    transform:scale(1.1);\n}\n\n\n.e0SlavpRYsUpqDnE2Vuz {\n    background: white;\n    color: #686b78;\n    margin:16px;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover {\n    cursor: pointer;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .N2IJ5tipSEMfjVRDCHFY {\n    color:#fc8018;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .N2IJ5tipSEMfjVRDCHFY::after {\n    background:#fc8018;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .oO3rpCmkOm8iHHWBVpRm {\n    color: #93959f;\n}\n\n.oO3rpCmkOm8iHHWBVpRm {\n    margin-left:4px;\n    margin-right:4px;\n    line-height: 1.2;\n    align-items: center;\n    background: white;\n    font-size: 14px;\n}\n\n.ikmFLBV6VMgNfSuo36mj svg{\n    height:13px;\n    width: 12.6px;\n}\n\n\n.N2IJ5tipSEMfjVRDCHFY {\n    content: \"Sector 42\";\n    display: inline-block;\n    font-size: 14px;\n    font-weight: 100;\n    color: #3D4152;\n    font-weight: bolder;\n    height: 15px;\n    min-width:30px;\n    margin-left: 16px;\n    position: relative;\n    top:0;\n}\n\n.N2IJ5tipSEMfjVRDCHFY:after {\n    content: \"\";\n    position: absolute;\n    height: 2px;\n    left: 0;\n    bottom: -5px;\n    width: 100%;\n    background: #3d4152;\n}\n\n.ERHcojh36YefytpU3nGV {\n    background: white;\n    height: 100%;\n    display:flex;\n    justify-content: space-between;\n    flex-direction: row-reverse;\n    align-items: center;\n    min-width: 20%;\n}\n\n.j_HE90uE6hGN6AffCOD_ {\n    color: #ffa700;\n    font-size: 10px;\n    top: 0px;\n    font-weight: 600;\n    position: absolute;\n    right: -24px;\n    text-transform: uppercase;\n}\n\n.jj1xLNwer5bvbyrW8BST {\n    position: relative;\n    background-color: white;\n    font-weight: 500;\n    font-size: 16px;\n    color: #3D4152;\n    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;\n    letter-spacing: 0;\n    line-height: 1.2;\n    margin-right:60px;\n    align-items: center;\n    display: flex;\n    gap: 8px;\n}\n\n.jj1xLNwer5bvbyrW8BST:first-child {\n    margin-right:0px;\n}\n\n.jj1xLNwer5bvbyrW8BST:hover {\n    cursor: pointer;\n    color: #fc8018;\n}\n\n.jj1xLNwer5bvbyrW8BST:hover svg{\n    fill:#fc8018;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".H2NPdT_uDBxpThy1UOJD {\n    background-color: white;\n    box-sizing: border-box;\n    position:sticky;\n    top:0px;\n    z-index:1;\n    min-height: 80px;\n    padding: 0px 20px;\n    width: 100vw;\n}\n\n.TIIeTZcwn8BkQosE76ed {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    margin:0px auto;\n    max-width: min(100%,1200px);\n    min-width: min(100%,1200px);\n    height:80px;\n    background: white;\n}\n\n@media screen and (max-width:1200px) {\n    .TIIeTZcwn8BkQosE76ed {\n        flex-direction: row-reverse;\n        padding: 0px;\n    }\n    .jj1xLNwer5bvbyrW8BST :not(:first-child), .oO3rpCmkOm8iHHWBVpRm {\n        display: none;\n    }\n\n}\n\n.YDVIs_FMsYPP6MSOIzrB {\n    display: flex;\n    align-items: center;\n}\n\n.POqybUUFjyFdsQ1ue3Au {\n    background: white;\n    height: 50px;\n    margin-right:16px;\n}\n\n.WAuYZFb4E3yHV7F7nQuY {\n    margin-right: 16px;\n    background: white;\n    height: 50px;\n    width:auto;\n    transition: transform 0.3s;\n}\n\n.WAuYZFb4E3yHV7F7nQuY:hover {\n    cursor: pointer;\n    transform:scale(1.1);\n}\n\n\n.e0SlavpRYsUpqDnE2Vuz {\n    background: white;\n    color: #686b78;\n    margin:16px;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover {\n    cursor: pointer;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .N2IJ5tipSEMfjVRDCHFY {\n    color:#fc8018;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .N2IJ5tipSEMfjVRDCHFY::after {\n    background:#fc8018;\n}\n\n.e0SlavpRYsUpqDnE2Vuz:hover .oO3rpCmkOm8iHHWBVpRm {\n    color: #93959f;\n}\n\n.oO3rpCmkOm8iHHWBVpRm {\n    margin-left:4px;\n    margin-right:4px;\n    line-height: 1.2;\n    align-items: center;\n    background: white;\n    font-size: 14px;\n}\n\n.ikmFLBV6VMgNfSuo36mj svg{\n    height:13px;\n    width: 12.6px;\n}\n\n\n.N2IJ5tipSEMfjVRDCHFY {\n    content: \"Sector 42\";\n    display: inline-block;\n    font-size: 14px;\n    font-weight: 100;\n    color: #3D4152;\n    font-weight: bolder;\n    height: 15px;\n    min-width:30px;\n    margin-left: 16px;\n    position: relative;\n    top:0;\n}\n\n.N2IJ5tipSEMfjVRDCHFY:after {\n    content: \"\";\n    position: absolute;\n    height: 2px;\n    left: 0;\n    bottom: -5px;\n    width: 100%;\n    background: #3d4152;\n}\n\n.ERHcojh36YefytpU3nGV {\n    background: white;\n    height: 100%;\n    display:flex;\n    justify-content: space-between;\n    flex-direction: row-reverse;\n    align-items: center;\n    min-width: 20%;\n}\n\n.j_HE90uE6hGN6AffCOD_ {\n    color: #ffa700;\n    font-size: 10px;\n    top: 0px;\n    font-weight: 600;\n    position: absolute;\n    right: -24px;\n    text-transform: uppercase;\n}\n\n.jj1xLNwer5bvbyrW8BST {\n    position: relative;\n    background-color: white;\n    font-weight: 500;\n    font-size: 16px;\n    color: #3D4152;\n    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;\n    letter-spacing: 0;\n    line-height: 1.2;\n    margin-right:60px;\n    align-items: center;\n    display: flex;\n    gap: 8px;\n}\n\n.jj1xLNwer5bvbyrW8BST:first-child {\n    margin-right:0px;\n}\n\n.jj1xLNwer5bvbyrW8BST:hover {\n    cursor: pointer;\n    color: #fc8018;\n}\n\n.jj1xLNwer5bvbyrW8BST:hover svg{\n    fill:#fc8018;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"headerWrapper": "H2NPdT_uDBxpThy1UOJD",
@@ -606,8 +606,8 @@ class offersHeader {
         let val = [...args], offersCards =``;
         for(let index = 0; index != val.length ;index++)
         {
-            offersCards += `<span class="${_offersHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].cards}">
-                                <img src = "${val[index]}" alt="offer number ${index}" width="260px" height="260px"/>
+            offersCards += `<span class="${_offersHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].cards}" id="cards">
+                                <img src = "${val[index]}" id = "${index}" alt="offer number ${index}" width="260px" height="260px"/>
                             </span>`;
         }
 
@@ -649,9 +649,9 @@ class offersHeader {
             this.offersHeaderTemplate.querySelector("#rightScrollImage").style.display = scrollValue > (-offset * (val.length - 3)) ? 'block':'none';
         }
 
+        this.offersHeaderTemplate.querySelector(`.${_offersHeader_css__WEBPACK_IMPORTED_MODULE_0__["default"].offerWrapper}`).addEventListener('dblclick', this.sayHi);
         this.offersHeaderTemplate.querySelector('#rightScroll').addEventListener('click', handleCarouselScroll);
         this.offersHeaderTemplate.querySelector('#leftScroll').addEventListener('click', handleCarouselScroll);
-        
     }
 
     get () {
@@ -728,7 +728,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".HzaSNn5MaC55JdgvAhMk {\n    height:340px;\n    background: #181a29;\n    align-content: center;\n    display:flex;\n    align-items: center;\n    padding: 0 20px;\n    min-width: fit-content;\n}\n\n.oeeUHtBa_4Ugg3eJjQla {\n    position:relative;\n    width: 1200px;\n    overflow: hidden;\n}\n\n.Wj5OiDPHPjBl6AHWGCn_ {\n    position:relative;\n    margin: auto;\n    width: 1200px;\n    height: 300px;\n    overflow: visible;\n    \n}\n\n.W_Zq0tJcUww1PNjfSJYE {\n    overflow:hidden;\n    white-space: nowrap;\n    transition: all 0.5s ease; \n    transform: translateX(0%);\n    height: 100%;\n}\n\n.HXo_NN67UD_qopA6y0cx {\n    display:inline-block;\n    padding:20px 0px;\n    height:260px;\n    width:260px;\n    margin-right: 50px;\n    transition: transform 0.3s;\n    overflow: hidden;\n}\n\n.HXo_NN67UD_qopA6y0cx:hover {\n    cursor: pointer;\n    transform:scale(1.05);\n}\n\n.jhSJdCm6XC4Zf4sa9H0k {\n    background: white;\n    text-align: center;\n    justify-items: center;\n    position: absolute;\n    display: block;\n    top:50%;\n    right:-23.5px;\n    margin-top: -23.5px;\n    height: 47px;\n    width: 47px;\n    border-radius: 50%;\n    border: 0;\n    padding-top: 4px;\n}\n\n.jhSJdCm6XC4Zf4sa9H0k:hover .VBnTTMQ6QZZgtkkX5mvn{\n    cursor: pointer;\n    transform: translateX(8px);\n}\n\n.VBnTTMQ6QZZgtkkX5mvn {\n    transition: transform 0.2s;\n    width: 25px;\n    position: absolute;\n    top: 11px;\n    left: 11px;\n    border-radius: 50%;\n}\n\n.BkyRS9nYujPqQfh5BGEp {\n    display: none;\n    background: white;\n    text-align: center;\n    justify-items: center;\n    position: absolute;\n    top:50%;\n    margin-top:-23.5px;\n    left:-23.5px;\n    height: 47px;\n    width: 47px;\n    border-radius: 50%;\n    border: 0;\n    padding-top: 4px;\n}\n\n.BkyRS9nYujPqQfh5BGEp:hover .DqkQVjNzVT0xKusbvXx_{\n    cursor: pointer;\n    transform: translateX(8px);\n}\n\n.DqkQVjNzVT0xKusbvXx_{\n    display: none;\n    rotate: 180deg;\n    width: 25px;\n    position: absolute;\n    top: 11px;\n    right: 11px;\n    border-radius: 50%;\n    transition: transform 0.2s;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".HzaSNn5MaC55JdgvAhMk {\n    height:340px;\n    background: #181a29;\n    align-content: center;\n    display:flex;\n    align-items: center;\n    padding: 0px 0px;\n    width: 100vw;\n}\n\n.oeeUHtBa_4Ugg3eJjQla {\n    position:relative;\n    width: min(100vw,1200px);\n    overflow: hidden;\n}\n\n.Wj5OiDPHPjBl6AHWGCn_ {\n    position:relative;\n    margin: auto;\n    width: min(100vw,1200px);\n    height: 300px;\n    overflow: visible;\n}\n\n.W_Zq0tJcUww1PNjfSJYE {\n    overflow:hidden;\n    white-space: nowrap;\n    transition: all 0.5s ease; \n    transform: translateX(0%);\n    height: 100%;\n}\n\n.HXo_NN67UD_qopA6y0cx {\n    display:inline-block;\n    padding:20px 0px;\n    height:260px;\n    width:260px;\n    margin-right: 50px;\n    transition: transform 0.3s;\n    overflow: hidden;\n}\n\n.HXo_NN67UD_qopA6y0cx:hover {\n    cursor: pointer;\n    transform:scale(1.05);\n}\n\n.jhSJdCm6XC4Zf4sa9H0k {\n    background: white;\n    text-align: center;\n    justify-items: center;\n    position: absolute;\n    display: block;\n    top:50%;\n    right:-23.5px;\n    margin-top: -23.5px;\n    height: 47px;\n    width: 47px;\n    border-radius: 50%;\n    border: 0;\n    padding-top: 4px;\n}\n\n.jhSJdCm6XC4Zf4sa9H0k:hover .VBnTTMQ6QZZgtkkX5mvn{\n    cursor: pointer;\n    transform: translateX(8px);\n}\n\n.VBnTTMQ6QZZgtkkX5mvn {\n    transition: transform 0.2s;\n    width: 25px;\n    position: absolute;\n    top: 11px;\n    left: 11px;\n    border-radius: 50%;\n}\n\n.BkyRS9nYujPqQfh5BGEp {\n    display: none;\n    background: white;\n    text-align: center;\n    justify-items: center;\n    position: absolute;\n    top:50%;\n    margin-top:-23.5px;\n    left:-23.5px;\n    height: 47px;\n    width: 47px;\n    border-radius: 50%;\n    border: 0;\n    padding-top: 4px;\n}\n\n.BkyRS9nYujPqQfh5BGEp:hover .DqkQVjNzVT0xKusbvXx_{\n    cursor: pointer;\n    transform: translateX(8px);\n}\n\n.DqkQVjNzVT0xKusbvXx_{\n    display: none;\n    rotate: 180deg;\n    width: 25px;\n    position: absolute;\n    top: 11px;\n    right: 11px;\n    border-radius: 50%;\n    transition: transform 0.2s;\n}\n\n@media (max-width:1230px) {\n    .jhSJdCm6XC4Zf4sa9H0k {\n        right: 10px;\n    }\n    .BkyRS9nYujPqQfh5BGEp {\n        left: 10px;\n    }\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"offerSpace": "HzaSNn5MaC55JdgvAhMk",
@@ -811,7 +811,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html, body {\n    margin: 0px;\n}\n\n@media (max-width:1300px) {\n    html {\n\n    width: fit-content;\n    }\n}\n\n\n*{\n    font-size: 16px;\n    font-weight:300px;\n    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "html, body {\n    margin: 0px;\n}\n\n@media (max-width:1300px) {\n    html {\n    width: 100vw;\n    }\n}\n\n\n*{\n    font-size: 16px;\n    font-weight:300px;\n    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -831,7 +831,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class allRestaurantsContainer {
-    constructor(args) {
+    constructor(...args) {
+        let [RestaurantDetails] = args;
         this.allRestaurantsTemplate = document.createElement('div');
         this.allRestaurantsTemplate.className = `${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].allRestaurantsContainer}`;
 
@@ -843,10 +844,10 @@ class allRestaurantsContainer {
         let vas = `${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].dontDisplay}`;
 
         let validatingPromotion = (i, cardIndex) =>{
-            if(validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantPromotionTag,'').length >0)
+            if(validate(RestaurantDetails[i+cardIndex].RestaurantPromotionTag,'').length >0)
             {
                 let promotionStrText = `
-                <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantPromotionTag}">${_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantPromotionTag}</div>
+                <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantPromotionTag}">${RestaurantDetails[i+cardIndex].RestaurantPromotionTag}</div>
                 <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantPromotionBanner}"></span>`;
                 return promotionStrText;
             }
@@ -854,32 +855,32 @@ class allRestaurantsContainer {
         }
 
         let cardIndex = 0, outerString=``;
-        for(let i =0; i<_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails.length;i+=4)
+        for(let i =0; i<RestaurantDetails.length;i+=4)
         {
             outerString += `<div class=${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].outerCont}>`;
             let innerString = ``;
             while(cardIndex < 4)
             {
                 innerString += `<div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].Card}">
-                    <img class= ${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantCardImage} src="${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantImageSrc, _RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.defaultImage)}" alt="hi" />
-                    <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantName}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantName,'Restaurant Name')}</div>
-                    <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantDishes}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantDishes,'No dishes')}</div>
+                    <img class= ${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantCardImage} src="${validate(RestaurantDetails[i+cardIndex].RestaurantImageSrc, _RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.defaultImage)}" alt="hi" />
+                    <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantName}">${validate(RestaurantDetails[i+cardIndex].RestaurantName,'Restaurant Name')}</div>
+                    <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantDishes}">${validate(RestaurantDetails[i+cardIndex].RestaurantDishes,'No dishes')}</div>
                     <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].InnerWrapper}">
                         <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].ratingWrapper}">
                             ${_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.starImageSVG}
                             <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantRating}">
-                            ${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantRating,'0.0')}
+                            ${validate(RestaurantDetails[i+cardIndex].RestaurantRating,'0.0')}
                             </span>
                         </div>
                         <span>•</span>
-                        <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantTime}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantTime,'10 MINS')}</span>
+                        <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantTime}">${validate(RestaurantDetails[i+cardIndex].RestaurantTime,'10 MINS')}</span>
                         <span>•</span>
-                        <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantServingSize}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantServingSize,'₹500 FOR TWO')}</span>
+                        <span class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantServingSize}">${validate(RestaurantDetails[i+cardIndex].RestaurantServingSize,'₹500 FOR TWO')}</span>
                     </div>
                     ${validatingPromotion(i,cardIndex)}
                     <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].RestaurantOffers}">
                         ${_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.discountImageSVG}
-                        <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].offerSyntax}">${validate(_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_1__.RestaurantDetails[i+cardIndex].RestaurantOffers,'50% Off | Use WELCOME50')}</div>                    
+                        <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].offerSyntax}">${validate(RestaurantDetails[i+cardIndex].RestaurantOffers,'50% Off | Use WELCOME50')}</div>                    
                     </div>
                     <div class="${_allRestaurantsContainer_css__WEBPACK_IMPORTED_MODULE_0__["default"].quickView}">QUICK VIEW</div>
                 </div>`;
@@ -887,7 +888,7 @@ class allRestaurantsContainer {
             }
             outerString += innerString + `</div>`;
             cardIndex=0;
-
+            
         }
 
         this.allRestaurantsTemplate.innerHTML = `
@@ -970,7 +971,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".kWBHP9MZ78_ezbnYJ0Vg {\n    width: 100%;\n}\n\n.YEbNcwe1tudV2EpFBaJs {\n    margin: auto;\n    width: 1300px;\n    padding: 12px 30px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n}\n\n.UKHI0wtVPS7xr3yhs9Ec {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 40px;\n    height: 380px;\n}\n\n@media screen and (max-width:900px) {\n    .YEbNcwe1tudV2EpFBaJs {\n        width: 100vw;\n        max-width: 700px;\n        height: fit-content;\n        align-items: center;\n        justify-content: center;\n        flex-wrap: wrap;\n    }\n    .UKHI0wtVPS7xr3yhs9Ec{\n        height: fit-content;\n        align-items: center;\n        justify-content: center;\n        flex-wrap: wrap;\n    }    \n}\n\n.sm7DtUECQWzgWrEqa4o6 {\n    height: fit-content;\n    width: 254px;\n    padding: 20px;\n    padding-bottom: 10px;\n    background: white;\n    position: relative;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n.sm7DtUECQWzgWrEqa4o6:hover {\n    border: 1px solid #d9d9db;\n}\n\n\n.sm7DtUECQWzgWrEqa4o6:hover .gYjGuymoYMX_x5lvf1Uf {\n    display: block;\n}\n\n.K72XqITQLX3RIV8vrMZE {\n    width: 254px;\n    display: block;\n}\n\n.yluMPY43JvSc8HltqFzh{\n    margin-top: 14px;\n    font-size: 17px;\n    font-weight: 500;\n}\n\n.aPNnH6KhG3_8jowCB9O6{\n    font-size: 13px;\n    margin-top:4px;\n    color: #686b78;\n}\n\n.xbmQXGWgDhQJFZMy1LeJ {\n    display: flex;\n    margin: 18px 0px;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 12px;\n}\n\n.If9o2e6miSc2U7oA11HU, ._rhIzJtPq7TGWpHXChkc, .xbmQXGWgDhQJFZMy1LeJ>span {\n    text-transform: uppercase;\n    color: #535665;\n    font-size: 12px;\n    font-weight: 300;\n}\n\n.W86jA4k043i9HtBUaDA7 {\n    background-color: #48c479;\n    height: 20px;\n    width: 42px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.uqXv8W_DxSPw7Wao9ncS{\n    font-size: 12px;\n    text-align: center;\n    color: white;\n}\n\n.FrKvjtiRVjI8rDfC1DCj {\n    color: white;\n    position: absolute;\n    font-weight: 300;\n    font-size: 12px;\n    top: 20px;\n    left: 12px;\n    background: rgb(58, 60, 65);\n    padding: 6px 10px;\n}\n\n.KewhAyt79SaZbPlNbOFH {    \n    position: absolute;\n    top: 46px;\n    left:12px;\n    border-left: 8px solid transparent;\n    border-top: 8px solid rgb(58, 60, 65);;\n}\n\n.mkRuzEA_IFjVddabVK2D {\n    display: flex;\n    gap: 4px;\n    height: 20px;\n    align-items: flex-start;\n    color: #926459;\n    margin: 14px 0px 10px;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.mPtOyYJG1WiHJkKnbzfb {\n    text-overflow: ellipsis;\n    font-size: 14px;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.gYjGuymoYMX_x5lvf1Uf {\n    display: none;\n    text-align: center;\n    color: #5d8ed5;\n    font-size: 12px;\n    font-weight: bold;\n    height: 20px;\n    text-transform: uppercase;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.gYjGuymoYMX_x5lvf1Uf:hover {\n    color:#5f616d;\n}\n\n.HzilLAaKMdI6xKeViLAz {\n    display: none;\n}\n\nul {\n    list-style-type: none;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".kWBHP9MZ78_ezbnYJ0Vg {\n    width: 100%;\n}\n\n.YEbNcwe1tudV2EpFBaJs {\n    margin: auto;\n    width: min(100%,1300px);\n    padding: 12px 30px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n}\n\n.UKHI0wtVPS7xr3yhs9Ec {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 40px;\n    height: 380px;\n}\n\n@media screen and (max-width:1200px) {\n    .YEbNcwe1tudV2EpFBaJs {\n        width: 100vw;\n        max-width: 700px;\n        height: fit-content;\n        align-items: center;\n        justify-content: center;\n        flex-wrap: wrap;\n    }\n    .UKHI0wtVPS7xr3yhs9Ec{\n        height: fit-content;\n        align-items: center;\n        justify-content: center;\n        flex-wrap: wrap;\n    }    \n}\n\n.sm7DtUECQWzgWrEqa4o6 {\n    height: fit-content;\n    width: 254px;\n    padding: 20px;\n    padding-bottom: 10px;\n    background: white;\n    position: relative;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n.sm7DtUECQWzgWrEqa4o6:hover {\n    border: 1px solid #d9d9db;\n}\n\n\n.sm7DtUECQWzgWrEqa4o6:hover .gYjGuymoYMX_x5lvf1Uf {\n    display: block;\n}\n\n.K72XqITQLX3RIV8vrMZE {\n    width: 254px;\n    display: block;\n}\n\n.yluMPY43JvSc8HltqFzh{\n    margin-top: 14px;\n    font-size: 17px;\n    font-weight: 500;\n}\n\n.aPNnH6KhG3_8jowCB9O6{\n    font-size: 13px;\n    margin-top:4px;\n    color: #686b78;\n}\n\n.xbmQXGWgDhQJFZMy1LeJ {\n    display: flex;\n    margin: 18px 0px;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 12px;\n}\n\n.If9o2e6miSc2U7oA11HU, ._rhIzJtPq7TGWpHXChkc, .xbmQXGWgDhQJFZMy1LeJ>span {\n    text-transform: uppercase;\n    color: #535665;\n    font-size: 12px;\n    font-weight: 300;\n}\n\n.W86jA4k043i9HtBUaDA7 {\n    background-color: #48c479;\n    height: 20px;\n    width: 42px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n\n.uqXv8W_DxSPw7Wao9ncS{\n    font-size: 12px;\n    text-align: center;\n    color: white;\n}\n\n.FrKvjtiRVjI8rDfC1DCj {\n    color: white;\n    position: absolute;\n    font-weight: 300;\n    font-size: 12px;\n    top: 20px;\n    left: 12px;\n    background: rgb(58, 60, 65);\n    padding: 6px 10px;\n}\n\n.KewhAyt79SaZbPlNbOFH {    \n    position: absolute;\n    top: 46px;\n    left:12px;\n    border-left: 8px solid transparent;\n    border-top: 8px solid rgb(58, 60, 65);;\n}\n\n.mkRuzEA_IFjVddabVK2D {\n    display: flex;\n    gap: 4px;\n    height: 20px;\n    align-items: flex-start;\n    color: #926459;\n    margin: 14px 0px 10px;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.mPtOyYJG1WiHJkKnbzfb {\n    text-overflow: ellipsis;\n    font-size: 14px;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.gYjGuymoYMX_x5lvf1Uf {\n    display: none;\n    text-align: center;\n    color: #5d8ed5;\n    font-size: 12px;\n    font-weight: bold;\n    height: 20px;\n    text-transform: uppercase;\n    padding-top: 14px;\n    border-top: 1px solid #e9e9eb;\n}\n\n.gYjGuymoYMX_x5lvf1Uf:hover {\n    color:#5f616d;\n}\n\n.HzilLAaKMdI6xKeViLAz {\n    display: none;\n}\n\nul {\n    list-style-type: none;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"allRestaurantsContainer": "kWBHP9MZ78_ezbnYJ0Vg",
@@ -1260,7 +1261,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".c5T6CwoXDDz_buuHxNn2 {\n    box-sizing: border-box;\n    background: white;\n    position: sticky;\n    height: 72px;\n    top: 0px;\n    margin:10px 0px;\n    z-index:1;\n    left: 0;\n}\n\n.ooAbLE2XPxiAI2CZxxcB{\n    box-sizing: border-box;\n    height: 100%;\n    display: flex;\n    align-items: end;\n    justify-content: space-between;\n    width: 1200px;\n    border-bottom: 1px solid #e9e9eb;\n    margin:auto;\n}\n\n.ERqgMbaWsV49NC4dEFbi {\n    box-sizing: border-box;\n    color:black;\n    font-size: 28px;\n    font-weight: 600;\n    padding-bottom: 10px;\n    text-align: end;\n}\n\n.a6wU4xsg02ZmyFfGUQdw {\n    box-sizing: border-box;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: flex-end;\n    margin-top: 8px;\n}\n\n.AQuauSZy1TCnBf5oqOan {\n    box-sizing: border-box;\n    margin-left:36px;\n    color: grey;\n    font-size: 16px;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan:hover {\n    cursor: pointer;\n    border-bottom: 1px solid grey;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child {\n    font-weight: bold;\n    color:black;\n}\n\n.vB99kcGo5EIjT5mqqCrt {\n    height: 20px;\n    width: 20px;\n    rotate: 90deg;\n    border-radius: 50%;\n    color: orange;\n    padding: 2px;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child:hover {\n    color: orange;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan > span:first-of-type {\n    padding-right: 8px;\n}\n\n.KBGhNOoS_ibGecf8x2hS {\n    position: relative;\n    top: 4px;\n    display: inline-block;\n    height: 25px;\n    width: 25px;\n    border: 2px solid orange;\n    border-radius: 50%;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".c5T6CwoXDDz_buuHxNn2 {\n    box-sizing: border-box;\n    background: white;\n    position: sticky;\n    height: fit-content;\n    top: 0px;\n    margin:10px 0px;\n    z-index:1;\n    left: 0;\n}\n\n.ooAbLE2XPxiAI2CZxxcB{\n    box-sizing: border-box;\n    height: 100%;\n    display: flex;\n    align-items: end;\n    justify-content: center;\n    width: min(100vw,1200px);\n    border-bottom: 1px solid #e9e9eb;\n    margin:auto;\n}\n\n.ERqgMbaWsV49NC4dEFbi {\n    box-sizing: border-box;\n    color:black;\n    font-size: 28px;\n    font-weight: 600;\n    padding-bottom: 10px;\n    text-align: end;\n}\n\n@media (max-width:1200px) {\n    .ERqgMbaWsV49NC4dEFbi {\n        display: none;\n    }\n\n}\n\n.a6wU4xsg02ZmyFfGUQdw {\n    box-sizing: border-box;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: flex-end;\n    margin-top: 8px;\n    overflow: hidden;\n}\n\n.AQuauSZy1TCnBf5oqOan {\n    box-sizing: border-box;\n    margin-left:36px;\n    color: grey;\n    font-size: 16px;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan:hover {\n    cursor: pointer;\n    border-bottom: 1px solid grey;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child {\n    font-weight: bold;\n    color:black;\n}\n\n.vB99kcGo5EIjT5mqqCrt {\n    height: 20px;\n    width: 20px;\n    rotate: 90deg;\n    border-radius: 50%;\n    color: orange;\n    padding: 2px;\n}\n\n.AQuauSZy1TCnBf5oqOan:last-child:hover {\n    color: orange;\n    border-bottom: 1px solid transparent;\n}\n\n.AQuauSZy1TCnBf5oqOan > span:first-of-type {\n    padding-right: 8px;\n}\n\n.KBGhNOoS_ibGecf8x2hS {\n    position: relative;\n    top: 4px;\n    display: inline-block;\n    height: 25px;\n    width: 25px;\n    border: 2px solid orange;\n    border-radius: 50%;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"restaurantNavigation": "c5T6CwoXDDz_buuHxNn2",
@@ -1414,7 +1415,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "._2oQj9BbwWAZgV4MrRbjQ {\n    background-color: black;\n    color: white;\n    position: relative;\n    width: 100%;\n    z-index:3;\n    margin-top: 40px;\n    padding: 80px 0px;\n    height: 100vh;\n}\n\n.S8yi7WXiM_VKXYjI7VCX {\n    margin: auto;\n    min-width: min(100%, 1200px);\n    max-width: min(100%, 1200px);\n    display: flex;\n    flex-direction: column;\n}\n\n.Om5T3LHXNh_fxtfwAtSB {\n    min-width: min(100%, 1200px);\n    max-width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n\n@media screen and (max-width: 1200px) {\n    .Om5T3LHXNh_fxtfwAtSB {\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n  }\n\n.Om5T3LHXNh_fxtfwAtSB > ul {\n    display: flex;\n    flex-direction: column;\n    height: max-content;\n    list-style-type: none;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul  li {\n    color: white;\n    font-size: 14px;\n    padding-bottom: 12px;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul :first-child {\n    color: grey;\n    font-size: 14px;\n    font-weight: 700;\n    margin-bottom: 32px;\n    text-transform: uppercase;\n}\n\n.bFa37uBeo0VYKrkxbCFR {\n    height: 100px;\n    width: 250px;\n    margin-bottom: 16px;\n}\n\n.zbZygVFG66ky_mYi8JXl {\n    list-style-type: none;\n    border-top: 1px solid white;\n    padding: 30px 0px;\n    height: 100px;\n    color: white;\n    font-size: 14px;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n    justify-items: center;\n    align-items: center;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "._2oQj9BbwWAZgV4MrRbjQ {\n    background-color: black;\n    color: white;\n    position: relative;\n    width: 100%;\n    z-index:3;\n    margin-top: 40px;\n    padding: 80px 0px;\n    height: auto;\n    width: 100vw;\n}\n\n.S8yi7WXiM_VKXYjI7VCX {\n    margin: auto;\n    min-width: min(100%, 1200px);\n    max-width: min(100%, 1200px);\n    display: flex;\n    flex-direction: column;\n}\n\n.Om5T3LHXNh_fxtfwAtSB {\n    min-width: min(100%, 1200px);\n    max-width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n\n@media screen and (max-width: 1200px) {\n    .Om5T3LHXNh_fxtfwAtSB {\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n  }\n\n.Om5T3LHXNh_fxtfwAtSB > ul {\n    display: flex;\n    flex-direction: column;\n    height: max-content;\n    list-style-type: none;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul  li {\n    color: white;\n    font-size: 14px;\n    padding-bottom: 12px;\n}\n\n.Om5T3LHXNh_fxtfwAtSB > ul :first-child {\n    color: grey;\n    font-size: 14px;\n    font-weight: 700;\n    margin-bottom: 32px;\n    text-transform: uppercase;\n}\n\n.bFa37uBeo0VYKrkxbCFR {\n    height: 100px;\n    width: min(15vw,250px);\n    margin-bottom: 16px;\n}\n\n.zbZygVFG66ky_mYi8JXl {\n    list-style-type: none;\n    border-top: 1px solid white;\n    padding: 30px 0px;\n    height: 100px;\n    color: white;\n    font-size: 14px;\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n    justify-items: center;\n    align-items: center;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"mainFooterTemplate": "_2oQj9BbwWAZgV4MrRbjQ",
@@ -1524,6 +1525,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(18);
 /* harmony import */ var _AllRestaurants_restaurantNavigation_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(22);
 /* harmony import */ var _Footer_mainFooter_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(25);
+/* harmony import */ var _AllRestaurants_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(21);
+
 
 
 
@@ -1538,6 +1541,41 @@ const body = document.getElementById('body');
 const head = document.getElementById('head');
 head.innerHTML +=`<link rel="icon" type="image/x-icon" href="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg">`;
 
+
+let mixin = {
+    sayHi(event) {
+        console.log(event.target.id, mixin);
+        let defaultData = new _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__.allRestaurantsContainer(_AllRestaurants_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_7__.RestaurantDetails);
+        switch(+event.target.id)
+        {
+            case 0:
+                console.log("case0");
+                allRestaurants.reallocate(["first", "choice"]);
+                break;
+            case 1:
+                console.log("case1");
+                allRestaurants.reallocate(["hi","hello"]);
+                break;
+            default:
+                console.log("hi", allRestaurants.allRestaurantsTemplate, defaultData);
+                allRestaurants.allRestaurantsTemplate.innerHTML = defaultData.get().innerHTML;
+                break;
+        }
+    },
+    reallocate(...args)
+    {
+        let str = ``;
+        for(let i = 0 ;i<args.length;i++)
+        str += `<div>${args[i]}</div>`;
+        this.allRestaurantsTemplate.innerHTML = str;
+    }
+};
+    
+Object.assign(_Header_offersHeader_js__WEBPACK_IMPORTED_MODULE_1__.offersHeader.prototype, mixin);
+
+Object.assign(_AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__.allRestaurantsContainer.prototype, mixin);
+
+
 let header = new _Header_mainHeader_js__WEBPACK_IMPORTED_MODULE_0__.mainHeader({logoURL:'https://www.swiggy.com/',logoSvg:_images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__.logoSvg});
 let offersSpace = new _Header_offersHeader_js__WEBPACK_IMPORTED_MODULE_1__.offersHeader(..._images_imagesFolder_js__WEBPACK_IMPORTED_MODULE_3__.offerImages);
 let combinedHeader = document.createElement('header');
@@ -1547,9 +1585,8 @@ combinedHeader.append(offersSpace.get());
 body.append(combinedHeader);
 
 
-
 let RestaurantHeader = new _AllRestaurants_restaurantNavigation_js__WEBPACK_IMPORTED_MODULE_5__.restaurantNavigation();
-let allRestaurants = new _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__.allRestaurantsContainer();
+let allRestaurants = new _AllRestaurants_allRestaurantsContainer_js__WEBPACK_IMPORTED_MODULE_4__.allRestaurantsContainer(_AllRestaurants_RestaurantsDetails_js__WEBPACK_IMPORTED_MODULE_7__.RestaurantDetails);
 let restaurantsFooter = new _Footer_mainFooter_js__WEBPACK_IMPORTED_MODULE_6__.mainFooter();
 let combinedBody = document.createElement('div');
 combinedBody.append(RestaurantHeader.get());

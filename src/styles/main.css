@@ -4,8 +4,7 @@ html, body {
 
 @media (max-width:1300px) {
     html {
-
-    width: fit-content;
+    width: 100vw;
     }
 }
 
